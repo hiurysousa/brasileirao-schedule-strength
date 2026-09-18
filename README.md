@@ -2,6 +2,22 @@
 
 Site estático que classifica a dificuldade dos **próximos cinco jogos** de cada clube da Série A. A coleta usa as respostas JSON da ESPN para classificação e calendário. O site mostra o último snapshot publicado, sem depender de um servidor Python ou de consultas à ESPN no navegador do visitante.
 
+## Prévia
+
+Capturas de partes da página, feitas com o snapshot de 18/09/2026. Os números exibidos no site mudam com as atualizações dos dados.
+
+**Visão geral**
+
+![Página inicial com apresentação e resumo do Brasileirão](docs/images/visao-geral.png)
+
+**Ranking de dificuldade**
+
+![Primeiros clubes do ranking com índices e próximos adversários](docs/images/ranking.png)
+
+**Análise jogo a jogo**
+
+![Detalhamento dos cinco próximos jogos do Santos](docs/images/jogo-a-jogo.png)
+
 ## Executar localmente
 
 Requer Python 3.12 ou superior.
