@@ -1,90 +1,53 @@
-# brasileirao-brasileirao-schedule-strength
+# Força da sequência — Brasileirão Série A
 
-Schedule Strength analyzer for Brasileirão Série A teams using ESPN data.
+Site estático que classifica a dificuldade dos **próximos cinco jogos** de cada clube da Série A. A coleta usa as respostas JSON da ESPN para classificação e calendário. O site mostra o último snapshot publicado, sem depender de um servidor Python ou de consultas à ESPN no navegador do visitante.
 
-## Overview
+## Executar localmente
 
-This project calculates a **Weighted Remaining Schedule Strength (SOS)** for all 20 teams in the Brasileirão Série A. Unlike traditional SOS metrics, this implementation accounts for the home/away factor — which has significantly more impact in Brazilian football than in other leagues.
+Requer Python 3.12 ou superior.
 
-The formula used:
-
-```
-SOS = Σ(opponent_performance × home_away_weight) / number_of_matches
-```
-
-Where:
-- `opponent_performance` = opponent's points / (matches played × 3)
-- `home_away_weight` = 1.2 if the opponent plays at home, 0.8 if away
-
-Only the next **5 matches** of each team in the Brasileirão are considered, making the metric more relevant for short-term analysis.
-
-## Data Sources
-
-All data is scraped from [ESPN Brasil](https://www.espn.com.br):
-- **Standings** — points, wins, draws, losses per team
-- **Fixtures** — next 5 Brasileirão matches per team, with home/away identification
-
-## Project Structure
-
-```
-brasileirao-brasileirao-schedule-strength/
-│
-├── scrappers/
-│   ├── scrapping_times.py       # Scrapes next 5 fixtures for all 20 teams
-│   └── scrapping_classificacao.py # Scrapes current standings table
-│
-├── .gitignore
-├── requirements.txt
-└── README.md
-```
-
-## Getting Started
-
-**Requirements:** Python 3.12 (Playwright is not yet compatible with 3.14)
-
-```bash
-# Clone the repository
-git clone https://github.com/hiurysousa/brasileirao-sos.git
-cd brasileirao-sos
-
-# Create and activate virtual environment
+```powershell
 python -m venv .venv
-.venv\Scripts\Activate.ps1  # Windows
-
-# Install dependencies
-pip install -r requirements.txt
-python -m playwright install chromium
+.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python -m schedule_strength --season 2026
+python -m http.server 8000
 ```
 
-**Run the scrapers:**
+Abra `http://localhost:8000`. O snapshot inicial está em `data/processed/snapshot.json`. Abrir `index.html` diretamente por `file://` não carrega JSON em alguns navegadores; use o servidor local. Em Linux/macOS, ative o ambiente com `source .venv/bin/activate`.
 
-```bash
-# Scrape standings
-python scrappers/scrapping_classificacao.py
+O ranking pode ser hospedado como site estático, por exemplo com GitHub Pages apontando para a raiz da branch principal. O arquivo `index.html`, `assets/` e `data/processed/snapshot.json` precisam ser publicados juntos.
 
-# Scrape fixtures for all 20 teams
-python scrappers/scrapping_times.py
+## Cálculo
+
+Para cada jogo futuro, medimos o aproveitamento do **adversário no local da partida**. Se o clube analisado joga fora, usamos a campanha do adversário em casa; se joga em casa, a campanha do adversário fora.
+
+```text
+aproveitamento geral = pontos na classificação / (3 × jogos na classificação)
+força do adversário = (pontos no local / 3 + 5 × aproveitamento geral)
+                       / (jogos no local + 5)
+SOS do clube = média da força dos adversários nos próximos até 5 jogos
 ```
 
-Both scripts generate CSV files used as input for the SOS analysis in pandas.
+Os cinco jogos equivalentes à campanha geral suavizam amostras pequenas de mandante/visitante. O SOS fica entre 0 e 1 e aparece no site em porcentagem. **Não é uma probabilidade de vitória**: é um índice de força dos adversários no contexto do mando. Quando restarem menos de cinco jogos, a média usa os disponíveis. Times sem jogos futuros ficam sem SOS.
 
-## Output
+## Dados e atualização
 
-| File | Description |
-|---|---|
-| `classificacao.csv` | Current standings with points, wins, draws, losses and performance rate |
-| `calendario.csv` | Next 5 Brasileirão fixtures per team with home/away situation |
+`python -m schedule_strength` busca a classificação e os jogos da Série A para o ano atual e grava o JSON de forma atômica. Use `--season AAAA` para uma temporada específica. A identificação dos clubes é feita por IDs da ESPN, sem correspondência por nome ou slug. O processo interrompe a publicação se faltar um clube ou se um jogo apontar para um adversário fora da classificação. Ele também não inclui jogos antigos adiados sem nova data futura.
 
-## Roadmap
+O workflow em `.github/workflows/refresh-data.yml` atualiza o snapshot às **08:00 e 20:00 UTC** e pode ser acionado manualmente em *Actions → Atualizar dados do Brasileirão*. Para a rotina funcionar, o repositório precisa permitir escrita por GitHub Actions. O GitHub Pages, se configurado para a branch, publicará o JSON atualizado junto com a página.
 
-- [x] ESPN standings scraper
-- [x] ESPN fixtures scraper (all 20 teams)
-- [ ] SOS calculation with pandas
-- [ ] Home/away weighted SOS
-- [ ] Dashboard or visualization layer
+A ESPN pode alterar os endpoints ou campos sem aviso; eles não são uma API pública documentada. Se a coleta falhar, o workflow falha e o último snapshot continua visível com data de atualização e aviso de dados antigos. As respostas usadas são:
 
-## Author
+- [Classificação](https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026)
+- [Calendário e resultados](https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500)
 
-**Hiury Sousa** — Computer Science student at IFCE, focused on Data Engineering.
+Os scripts antigos em `scrappers/` e `operations/example.py` foram mantidos como histórico do protótipo. O site novo usa apenas `schedule_strength/`, `assets/` e o snapshot JSON.
 
-[GitHub](https://github.com/hiurysousa) · [LinkedIn](https://linkedin.com/in/hiurysousa)
+## Verificação
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
+Os testes verificam o ajuste de mando, a média dos jogos futuros e a interrupção quando os dados estão incompletos.

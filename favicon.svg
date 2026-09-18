@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Força da sequência</title>
+  <rect width="64" height="64" rx="14" fill="#0a1826"/>
+  <g fill="#b7eb42">
+    <path d="M13 38h9l-3 13h-9z"/>
+    <path d="M27 27h9l-5 24h-9z"/>
+    <path d="M41 14h9l-8 37h-9z"/>
+  </g>
+</svg>
