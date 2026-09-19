@@ -1,6 +1,3 @@
 .venv/
 __pycache__/
 *.pyc
-*.csv
-debug_espn.html
-data/output/

@@ -1,0 +1,7 @@
+.github/
+docs/
+radar_sos/
+requirements/
+tests/
+.gitignore
+README.md

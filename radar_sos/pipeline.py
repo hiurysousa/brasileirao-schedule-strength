@@ -1,4 +1,4 @@
-"""Coleta da ESPN e cálculo reproduzível da força da sequência."""
+"""Coleta da ESPN e cálculo reproduzível do Radar SOS."""
 
 from __future__ import annotations
 

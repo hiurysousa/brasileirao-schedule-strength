@@ -1,4 +1,4 @@
-"""Atualiza o JSON consumido pelo site: python -m schedule_strength."""
+"""Atualiza o JSON consumido pelo site: python -m radar_sos."""
 
 import argparse
 import json

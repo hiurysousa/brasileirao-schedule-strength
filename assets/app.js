@@ -159,7 +159,7 @@ async function load() {
     $('#ranking-body').append(row);
     const notice = $('#page-error');
     notice.hidden = false;
-    notice.textContent = `Falha ao abrir o snapshot (${error.message}). Execute python -m http.server 8000 na pasta do projeto e acesse http://localhost:8000. Para atualizar: python -m schedule_strength.`;
+    notice.textContent = `Falha ao abrir o snapshot (${error.message}). Execute python -m http.server 8000 na pasta do projeto e acesse http://localhost:8000. Para atualizar: python -m radar_sos.`;
   }
 }
 

@@ -1,7 +1,7 @@
 import unittest
 from datetime import datetime, timezone
 
-from schedule_strength.pipeline import build_snapshot, parse_standings
+from radar_sos.pipeline import build_snapshot, parse_standings
 
 
 def standings():

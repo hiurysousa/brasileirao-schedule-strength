@@ -1,6 +1,6 @@
-# Força da sequência — Brasileirão Série A
+# Radar SOS — Brasileirão Série A
 
-Site estático que classifica a dificuldade dos **próximos cinco jogos** de cada clube da Série A. A coleta usa as respostas JSON da ESPN para classificação e calendário. O site mostra o último snapshot publicado, sem depender de um servidor Python ou de consultas à ESPN no navegador do visitante.
+O **Radar SOS** é um site estático que classifica a dificuldade dos **próximos cinco jogos** de cada clube da Série A. A coleta usa as respostas JSON da ESPN para classificação e calendário. O site mostra o último snapshot publicado, sem depender de um servidor Python ou de consultas à ESPN no navegador do visitante.
 
 ## Prévia
 
@@ -25,14 +25,20 @@ Requer Python 3.12 ou superior.
 ```powershell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python -m schedule_strength --season 2026
+python -m pip install -r requirements/refresh.txt
+python -m radar_sos --season 2026
 python -m http.server 8000
 ```
 
 Abra `http://localhost:8000`. O snapshot inicial está em `data/processed/snapshot.json`. Abrir `index.html` diretamente por `file://` não carrega JSON em alguns navegadores; use o servidor local. Em Linux/macOS, ative o ambiente com `source .venv/bin/activate`.
 
 O ranking pode ser hospedado como site estático, por exemplo com GitHub Pages apontando para a raiz da branch principal. O arquivo `index.html`, `assets/` e `data/processed/snapshot.json` precisam ser publicados juntos.
+
+### Deploy na Vercel
+
+O `vercel.json` define o projeto como um site estático, sem etapa de build. O `.vercelignore` exclui o pipeline Python, os testes e a documentação do pacote publicado. A atualização do snapshot continua sendo executada separadamente pelo GitHub Actions.
+
+Na configuração do projeto na Vercel, mantenha o diretório raiz como `.`. As configurações versionadas selecionam o preset **Other**, deixam o comando de build vazio e publicam a raiz do projeto.
 
 ## Cálculo
 
@@ -49,7 +55,7 @@ Os cinco jogos equivalentes à campanha geral suavizam amostras pequenas de mand
 
 ## Dados e atualização
 
-`python -m schedule_strength` busca a classificação e os jogos da Série A para o ano atual e grava o JSON de forma atômica. Use `--season AAAA` para uma temporada específica. A identificação dos clubes é feita por IDs da ESPN, sem correspondência por nome ou slug. O processo interrompe a publicação se faltar um clube ou se um jogo apontar para um adversário fora da classificação. Ele também não inclui jogos antigos adiados sem nova data futura.
+`python -m radar_sos` busca a classificação e os jogos da Série A para o ano atual e grava o JSON de forma atômica. Use `--season AAAA` para uma temporada específica. A identificação dos clubes é feita por IDs da ESPN, sem correspondência por nome ou slug. O processo interrompe a publicação se faltar um clube ou se um jogo apontar para um adversário fora da classificação. Ele também não inclui jogos antigos adiados sem nova data futura.
 
 O workflow em `.github/workflows/refresh-data.yml` atualiza o snapshot às **08:00 e 20:00 UTC** e pode ser acionado manualmente em *Actions → Atualizar dados do Brasileirão*. Para a rotina funcionar, o repositório precisa permitir escrita por GitHub Actions. O GitHub Pages, se configurado para a branch, publicará o JSON atualizado junto com a página.
 
@@ -58,7 +64,19 @@ A ESPN pode alterar os endpoints ou campos sem aviso; eles não são uma API pú
 - [Classificação](https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026)
 - [Calendário e resultados](https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500)
 
-Os scripts antigos em `scrappers/` e `operations/example.py` foram mantidos como histórico do protótipo. O site novo usa apenas `schedule_strength/`, `assets/` e o snapshot JSON.
+## Estrutura do projeto
+
+```text
+radar_sos/                         coleta, validação e cálculo do SOS
+assets/                            estilos e comportamento da página
+data/processed/snapshot.json       dados publicados pelo site
+docs/images/                       capturas utilizadas neste README
+requirements/                      dependências do pipeline de atualização
+tests/                             testes da métrica e das validações
+.github/workflows/refresh-data.yml atualização automática dos dados
+index.html                         página principal
+vercel.json                        configuração do deploy estático
+```
 
 ## Verificação
 

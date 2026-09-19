@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0a1826">
-  <meta name="description" content="Ranking de dificuldade dos próximos cinco jogos de cada clube do Brasileirão Série A, com dados da ESPN e ajuste por mando de campo.">
-  <title>Força da sequência | Brasileirão</title>
+  <meta name="description" content="Radar SOS: ranking de dificuldade dos próximos cinco jogos de cada clube do Brasileirão Série A, com dados da ESPN e ajuste por mando de campo.">
+  <title>Radar SOS | Brasileirão</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
 <body>
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="brand" href="#top" aria-label="Força da sequência, início"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>FORÇA<span class="brand-accent">.</span>DA SEQUÊNCIA</span></a>
+      <a class="brand" href="#top" aria-label="Radar SOS, início"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>RADAR SOS</span></a>
       <nav aria-label="Navegação principal"><a href="#ranking">Ranking</a><a href="#metodologia">Metodologia</a><a class="source-link" href="#fontes">Fontes <span aria-hidden="true">↗</span></a></nav>
     </div>
   </header>
@@ -45,7 +45,7 @@
     </section>
 
     <section id="ranking" class="ranking-section shell">
-      <div class="section-heading"><div><span class="section-kicker">02 / O RANKING</span><h2>Força da sequência</h2><p>Quanto maior o índice, mais fortes os adversários dos próximos jogos.</p></div><div class="heading-aside"><span class="aside-line"></span> 20 CLUBES · 5 JOGOS</div></div>
+      <div class="section-heading"><div><span class="section-kicker">02 / O RANKING</span><h2>Radar SOS</h2><p>Quanto maior o índice, mais fortes os adversários dos próximos jogos.</p></div><div class="heading-aside"><span class="aside-line"></span> 20 CLUBES · 5 JOGOS</div></div>
       <div class="toolbar"><label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Buscar clube</span><input id="search" type="search" placeholder="Buscar clube" autocomplete="off"></label><label class="sort-box"><span class="sr-only">Ordenar ranking</span><select id="sort"><option value="hardest">Mais difícil primeiro</option><option value="easiest">Mais fácil primeiro</option></select></label></div>
       <div class="table-frame"><table><thead><tr><th class="rank-cell">#</th><th>CLUBE</th><th>ÍNDICE SOS <span title="Média da força dos adversários no local dos próximos cinco jogos">ⓘ</span></th><th>JOGOS</th><th>PRÓXIMOS ADVERSÁRIOS</th><th class="action-cell"></th></tr></thead><tbody id="ranking-body"><tr><td colspan="6" class="table-message">Carregando ranking…</td></tr></tbody></table></div>
       <p class="table-footnote"><span class="legend-item"><i class="legend-home"></i> Em casa</span><span class="legend-item"><i class="legend-away"></i> Fora</span><span>Selecione um clube para ver o cálculo jogo a jogo.</span></p>
@@ -57,6 +57,6 @@
     <section id="metodologia" class="method-section"><div class="shell method-grid"><div><span class="section-kicker">04 / METODOLOGIA</span><h2>Como medimos a<br><em>dificuldade?</em></h2><p>O índice resume o aproveitamento dos adversários no local de cada confronto. Um adversário que joga bem em casa pesa mais quando o seu clube precisa visitá-lo.</p><a href="#fontes">Ver origem dos dados <span aria-hidden="true">↗</span></a></div><div class="formula-panel"><div class="formula-label">FÓRMULA POR PARTIDA</div><div class="formula">Força = <span>(pontos no mando ÷ 3) + 5 × aproveitamento geral</span><b>jogos no mando + 5</b></div><p>Usamos cinco jogos equivalentes à campanha geral para suavizar diferenças grandes causadas por poucas partidas em casa ou fora. O SOS é a média da força dos adversários nos próximos cinco jogos. A escala vai de 0 a 100% e indica dificuldade relativa; não é uma probabilidade de vitória.</p><div class="formula-meta"><span>01&nbsp; Adversário</span><span>02&nbsp; Mando</span><span>03&nbsp; Média</span></div></div></div></section>
   </main>
 
-  <footer id="fontes"><div class="shell footer-grid"><div><span class="footer-brand">FORÇA<span>.</span>DA SEQUÊNCIA</span><p>Uma leitura independente do calendário do Campeonato Brasileiro.</p></div><div><span class="footer-label">DADOS</span><p>Classificação e jogos: <a id="standings-link" href="https://www.espn.com.br/futebol/classificacao/_/liga/bra.1" target="_blank" rel="noopener noreferrer">ESPN</a>. Resultados e datas podem mudar. Esta página apresenta o último snapshot publicado.</p></div><div><span class="footer-label">ATUALIZAÇÃO</span><p id="footer-updated">Carregando…</p></div></div><div class="shell footer-bottom"><span>BRASILEIRÃO · ANÁLISE DE DADOS</span><span>Desenvolvido por <a href="https://www.linkedin.com/in/hiurysousa/" target="_blank" rel="noopener noreferrer">Hiury Sousa</a></span></div></footer>
+  <footer id="fontes"><div class="shell footer-grid"><div><span class="footer-brand">RADAR SOS</span><p>Uma leitura independente do calendário do Campeonato Brasileiro.</p></div><div><span class="footer-label">DADOS</span><p>Classificação e jogos: <a id="standings-link" href="https://www.espn.com.br/futebol/classificacao/_/liga/bra.1" target="_blank" rel="noopener noreferrer">ESPN</a>. Resultados e datas podem mudar. Esta página apresenta o último snapshot publicado.</p></div><div><span class="footer-label">ATUALIZAÇÃO</span><p id="footer-updated">Carregando…</p></div></div><div class="shell footer-bottom"><span>BRASILEIRÃO · ANÁLISE DE DADOS</span><span>Desenvolvido por <a href="https://www.linkedin.com/in/hiurysousa/" target="_blank" rel="noopener noreferrer">Hiury Sousa</a></span></div></footer>
 </body>
 </html>
