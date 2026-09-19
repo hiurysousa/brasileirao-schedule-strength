@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title description">
+  <title id="title">Fluxo ETL e cálculo do Radar SOS</title>
+  <desc id="description">Diagrama da extração dos dados da ESPN, transformação dos resultados, cálculo da força por mando, cálculo final do SOS e publicação do site.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071522"/>
+      <stop offset="1" stop-color="#102b39"/>
+    </linearGradient>
+    <linearGradient id="formula" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#183b46"/>
+      <stop offset="1" stop-color="#12313c"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#000814" flood-opacity=".28"/>
+    </filter>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#9bd43a"/>
+    </marker>
+    <style>
+      .sans{font-family:Inter,Segoe UI,Arial,sans-serif}.title{font-size:48px;font-weight:750;letter-spacing:-1.6px}.subtitle{font-size:17px;fill:#9fb5bd}.stage{font-size:13px;font-weight:800;letter-spacing:2.5px}.card-title{font-size:20px;font-weight:750;fill:#f6fbfb}.body{font-size:14px;fill:#a9bdc4}.small{font-size:12px;fill:#839da6}.code{font:600 12px Consolas,monospace;fill:#b7eb42}.formula-title{font-size:15px;font-weight:750;fill:#b7eb42}.formula-text{font:600 16px Consolas,monospace;fill:#edf6f2}.step{font-size:12px;font-weight:800;fill:#071522}.flow{fill:none;stroke:#9bd43a;stroke-width:2.5;marker-end:url(#arrow)}.flow-soft{fill:none;stroke:#50727c;stroke-width:2;marker-end:url(#arrow)}.card{fill:#102936;stroke:#34505a;stroke-width:1.5}.source{fill:#122f3c;stroke:#44646d;stroke-width:1.5}.pill{fill:#0a202b}.divider{stroke:#33525c;stroke-width:1}.num{font-size:14px;font-weight:800;fill:#b7eb42}.output{fill:#f4f8f6;stroke:#cfe0dc;stroke-width:1.5}.output-title{font-size:19px;font-weight:750;fill:#102936}.output-body{font-size:13px;fill:#637981}.output-code{font:600 11px Consolas,monospace;fill:#20755f}
+    </style>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#background)"/>
+  <circle cx="1470" cy="40" r="260" fill="none" stroke="#264654" stroke-width="1"/>
+  <circle cx="1470" cy="40" r="190" fill="none" stroke="#264654" stroke-width="1" stroke-dasharray="5 7"/>
+
+  <g class="sans">
+    <g transform="translate(80 55)">
+      <g transform="skewX(-13)" fill="#b7eb42">
+        <rect x="0" y="28" width="10" height="18" rx="2"/><rect x="17" y="14" width="10" height="32" rx="2"/><rect x="34" y="0" width="10" height="46" rx="2"/>
+      </g>
+      <text x="65" y="35" fill="#f7fbfa" font-size="20" font-weight="800">RADAR SOS</text>
+    </g>
+    <text class="title" x="80" y="133" fill="#f7fbfa">Do dado bruto ao ranking final</text>
+    <text class="subtitle" x="80" y="166">ETL, regras de negócio e publicação dos próximos cinco jogos do Brasileirão</text>
+
+    <g transform="translate(80 196)">
+      <rect width="1440" height="58" rx="13" fill="#b7eb42"/>
+      <circle cx="31" cy="29" r="13" fill="#071522"/>
+      <path d="M31 21v9l6 4" fill="none" stroke="#b7eb42" stroke-width="2.4" stroke-linecap="round"/>
+      <text x="56" y="25" fill="#071522" font-size="12" font-weight="800" letter-spacing="1.7">AUTOMAÇÃO</text>
+      <text x="56" y="43" fill="#173023" font-size="14" font-weight="650">GitHub Actions executa o pipeline às 08:00 e 20:00 UTC ou sob demanda</text>
+      <g transform="translate(1137 13)"><rect width="138" height="32" rx="16" fill="#071522"/><text x="69" y="21" text-anchor="middle" fill="#f7fbfa" font-size="11" font-weight="700">python -m radar_sos</text></g>
+      <g transform="translate(1285 13)"><rect width="137" height="32" rx="16" fill="#d7ff7f"/><text x="68.5" y="21" text-anchor="middle" fill="#173023" font-size="11" font-weight="800">2× AO DIA</text></g>
+    </g>
+
+    <g transform="translate(80 280)">
+      <rect width="370" height="40" rx="8" fill="#173c46"/><circle cx="23" cy="20" r="13" fill="#b7eb42"/><text class="step" x="23" y="25" text-anchor="middle">E</text><text class="stage" x="47" y="25" fill="#cfe0dc">EXTRACT · EXTRAIR</text>
+    </g>
+    <g transform="translate(480 280)">
+      <rect width="700" height="40" rx="8" fill="#173c46"/><circle cx="23" cy="20" r="13" fill="#b7eb42"/><text class="step" x="23" y="25" text-anchor="middle">T</text><text class="stage" x="47" y="25" fill="#cfe0dc">TRANSFORM · TRATAR E CALCULAR</text>
+    </g>
+    <g transform="translate(1210 280)">
+      <rect width="310" height="40" rx="8" fill="#173c46"/><circle cx="23" cy="20" r="13" fill="#b7eb42"/><text class="step" x="23" y="25" text-anchor="middle">L</text><text class="stage" x="47" y="25" fill="#cfe0dc">LOAD · PUBLICAR</text>
+    </g>
+
+    <!-- Extract -->
+    <g filter="url(#shadow)">
+      <g transform="translate(80 345)">
+        <rect class="source" width="370" height="105" rx="14"/>
+        <circle cx="32" cy="31" r="17" fill="#b7eb42"/><path d="M23 31h18M32 22a18 18 0 0 1 0 18M32 22a18 18 0 0 0 0 18" fill="none" stroke="#0a202b" stroke-width="1.7"/>
+        <text class="card-title" x="61" y="31">Classificação ESPN</text>
+        <text class="body" x="24" y="62">20 clubes · IDs · pontos · jogos · logos</text>
+        <rect class="pill" x="24" y="74" width="159" height="22" rx="11"/><text class="code" x="36" y="89">/standings?season=</text>
+      </g>
+      <g transform="translate(80 470)">
+        <rect class="source" width="370" height="105" rx="14"/>
+        <circle cx="32" cy="31" r="17" fill="#b7eb42"/><path d="M22 26h20M22 32h14M22 38h17" stroke="#0a202b" stroke-width="2" stroke-linecap="round"/>
+        <text class="card-title" x="61" y="31">Calendário ESPN</text>
+        <text class="body" x="24" y="62">Resultados · jogos futuros · datas · mando</text>
+        <rect class="pill" x="24" y="74" width="185" height="22" rx="11"/><text class="code" x="36" y="89">/scoreboard?dates=</text>
+      </g>
+      <g transform="translate(80 595)">
+        <rect class="card" width="370" height="125" rx="14"/>
+        <text class="num" x="24" y="29">01</text><text class="card-title" x="55" y="31">Coleta resiliente</text>
+        <text class="body" x="24" y="61">HTTP JSON com timeout de 30 s</text>
+        <text class="body" x="24" y="84">e até 3 tentativas para erros temporários.</text>
+        <rect class="pill" x="24" y="96" width="112" height="22" rx="11"/><text class="code" x="36" y="111">fetch_season()</text>
+      </g>
+    </g>
+    <path class="flow-soft" d="M80 397 H55 V630 H80"/>
+    <path class="flow-soft" d="M80 522 H65 V682 H80"/>
+    <path class="flow" d="M450 656 H480"/>
+
+    <!-- Transform -->
+    <g filter="url(#shadow)">
+      <g transform="translate(480 345)">
+        <rect class="card" width="330" height="165" rx="14"/>
+        <text class="num" x="24" y="29">02</text><text class="card-title" x="55" y="31">Normalização</text>
+        <text class="body" x="24" y="62">Classificação → clubes por ID</text>
+        <text class="body" x="24" y="85">Eventos → concluídos e futuros</text>
+        <text class="body" x="24" y="108">Datas em UTC · mandante · visitante</text>
+        <rect class="pill" x="24" y="128" width="128" height="22" rx="11"/><text class="code" x="36" y="143">parse_standings()</text>
+        <rect class="pill" x="160" y="128" width="114" height="22" rx="11"/><text class="code" x="172" y="143">parse_events()</text>
+      </g>
+      <g transform="translate(850 345)">
+        <rect class="card" width="330" height="165" rx="14"/>
+        <text class="num" x="24" y="29">03</text><text class="card-title" x="55" y="31">Validação</text>
+        <text class="body" x="24" y="62">✓ exatamente 20 clubes</text>
+        <text class="body" x="24" y="85">✓ IDs únicos e pontuação possível</text>
+        <text class="body" x="24" y="108">✓ adversários presentes na tabela</text>
+        <text class="small" x="24" y="140">Dados inconsistentes interrompem a publicação.</text>
+      </g>
+      <g transform="translate(480 545)">
+        <rect class="card" width="330" height="145" rx="14"/>
+        <text class="num" x="24" y="29">04</text><text class="card-title" x="55" y="31">Campanhas por mando</text>
+        <text class="body" x="24" y="62">Cada resultado soma jogos e pontos em</text>
+        <text class="body" x="24" y="85">dois recortes: casa e fora.</text>
+        <text class="small" x="24" y="118">Vitória = 3 · empate = 1 · derrota = 0</text>
+      </g>
+      <g transform="translate(850 545)">
+        <rect class="card" width="330" height="145" rx="14"/>
+        <text class="num" x="24" y="29">05</text><text class="card-title" x="55" y="31">Contexto do confronto</text>
+        <rect x="24" y="53" width="282" height="30" rx="7" fill="#183d45"/><text class="body" x="37" y="73">Seu clube em CASA → rival FORA</text>
+        <rect x="24" y="91" width="282" height="30" rx="7" fill="#183d45"/><text class="body" x="37" y="111">Seu clube FORA → rival em CASA</text>
+      </g>
+    </g>
+    <path class="flow-soft" d="M810 427 H850"/>
+    <path class="flow-soft" d="M645 510 V545"/>
+    <path class="flow-soft" d="M1015 510 V545"/>
+
+    <g transform="translate(480 725)" filter="url(#shadow)">
+      <rect width="700" height="253" rx="16" fill="url(#formula)" stroke="#46646d" stroke-width="1.5"/>
+      <text class="num" x="24" y="31">06</text><text class="card-title" x="55" y="33">Cálculo do índice</text>
+      <line class="divider" x1="24" y1="51" x2="676" y2="51"/>
+      <text class="formula-title" x="24" y="82">A. APROVEITAMENTO GERAL</text>
+      <text class="formula-text" x="270" y="82">pontos ÷ (3 × jogos)</text>
+      <text class="formula-title" x="24" y="124">B. FORÇA DO RIVAL NO MANDO</text>
+      <text class="formula-text" x="270" y="124">(pontos_mando ÷ 3 + 5 × aproveitamento_geral)</text>
+      <text class="formula-text" x="270" y="151">────────────────────────────────────────────</text>
+      <text class="formula-text" x="407" y="177">jogos_mando + 5</text>
+      <text class="formula-title" x="24" y="217">C. SOS FINAL</text>
+      <text class="formula-text" x="270" y="217">média da força dos próximos até 5 rivais</text>
+      <text class="small" x="24" y="243">Os 5 jogos equivalentes à campanha geral reduzem distorções de amostras pequenas.</text>
+    </g>
+    <path class="flow-soft" d="M645 690 V725"/>
+    <path class="flow-soft" d="M1015 690 V725"/>
+
+    <!-- Load -->
+    <g filter="url(#shadow)">
+      <g transform="translate(1210 345)">
+        <rect class="output" width="310" height="120" rx="14"/>
+        <circle cx="32" cy="32" r="18" fill="#dff4a9"/><path d="M25 23h11l5 5v14H25zM36 23v6h5" fill="none" stroke="#20755f" stroke-width="1.8"/>
+        <text class="output-title" x="60" y="34">Snapshot JSON</text>
+        <text class="output-body" x="24" y="68">20 clubes ordenados por SOS, jogos,</text>
+        <text class="output-body" x="24" y="89">força individual e horário da coleta.</text>
+        <text class="output-code" x="24" y="108">data/processed/snapshot.json</text>
+      </g>
+      <g transform="translate(1210 500)">
+        <rect class="output" width="310" height="120" rx="14"/>
+        <circle cx="32" cy="32" r="18" fill="#dff4a9"/><path d="M24 32h16M34 26l6 6-6 6" fill="none" stroke="#20755f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="output-title" x="60" y="34">Commit automático</text>
+        <text class="output-body" x="24" y="68">Gravação atômica, commit e push</text>
+        <text class="output-body" x="24" y="89">somente quando os dados mudam.</text>
+        <text class="output-code" x="24" y="108">refresh-data.yml</text>
+      </g>
+      <g transform="translate(1210 655)">
+        <rect class="output" width="310" height="120" rx="14"/>
+        <circle cx="32" cy="32" r="18" fill="#dff4a9"/><path d="M23 38l9-16 9 16-9-5z" fill="none" stroke="#20755f" stroke-width="1.8" stroke-linejoin="round"/>
+        <text class="output-title" x="60" y="34">Vercel</text>
+        <text class="output-body" x="24" y="68">Publica HTML, CSS, JavaScript e JSON</text>
+        <text class="output-body" x="24" y="89">como site estático na CDN.</text>
+        <text class="output-code" x="24" y="108">vercel.json · framework: Other</text>
+      </g>
+      <g transform="translate(1210 810)">
+        <rect class="output" width="310" height="120" rx="14"/>
+        <circle cx="32" cy="32" r="18" fill="#b7eb42"/><path d="M22 25h20v14H22zM28 43h8" fill="none" stroke="#102936" stroke-width="1.8" stroke-linecap="round"/>
+        <text class="output-title" x="60" y="34">Ranking interativo</text>
+        <text class="output-body" x="24" y="68">O navegador lê o snapshot e apresenta</text>
+        <text class="output-body" x="24" y="89">ranking, busca e análise jogo a jogo.</text>
+        <text class="output-code" x="24" y="108">index.html + assets/app.js</text>
+      </g>
+    </g>
+    <path class="flow-soft" d="M1365 465 V500"/>
+    <path class="flow-soft" d="M1365 620 V655"/>
+    <path class="flow-soft" d="M1365 775 V810"/>
+    <path class="flow" d="M1180 851 H1195 V405 H1210"/>
+
+    <g transform="translate(80 1015)">
+      <line x1="0" y1="0" x2="1440" y2="0" stroke="#31505a"/>
+      <circle cx="8" cy="35" r="5" fill="#b7eb42"/><text class="small" x="22" y="40">Quanto maior o SOS, mais forte é a sequência de adversários.</text>
+      <text class="small" x="1440" y="40" text-anchor="end">O índice mede dificuldade relativa — não probabilidade de vitória.</text>
+    </g>
+  </g>
+</svg>

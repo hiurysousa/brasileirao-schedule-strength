@@ -18,6 +18,12 @@ Capturas de partes da página, feitas com o snapshot de 18/09/2026. Os números 
 
 ![Detalhamento dos cinco próximos jogos do Santos](docs/images/jogo-a-jogo.png)
 
+## Como funciona
+
+![Fluxo ETL do Radar SOS, desde a coleta na ESPN até o ranking publicado](docs/images/fluxo-etl-radar-sos.png)
+
+A versão vetorial editável está em [`docs/images/fluxo-etl-radar-sos.svg`](docs/images/fluxo-etl-radar-sos.svg).
+
 ## Executar localmente
 
 Requer Python 3.12 ou superior.
