@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-09-29T23:14:15.683575Z",
+  "updated_at": "2026-09-30T14:16:46.070692Z",
   "sources": {
     "standings": "https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026",
     "schedule": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500"
@@ -72,7 +72,7 @@
         },
         {
           "id": "401841282",
-          "date": "2026-10-24T23:00:00Z",
+          "date": "2026-10-25T00:00:00Z",
           "opponent_id": "9967",
           "opponent": "Bahia",
           "opponent_abbreviation": "BAH",
@@ -273,7 +273,7 @@
         },
         {
           "id": "401841282",
-          "date": "2026-10-24T23:00:00Z",
+          "date": "2026-10-25T00:00:00Z",
           "opponent_id": "2674",
           "opponent": "Santos",
           "opponent_abbreviation": "SAN",
