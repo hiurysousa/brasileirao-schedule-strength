@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-10-02T23:19:33.010988Z",
+  "updated_at": "2026-10-03T12:46:38.730752Z",
   "sources": {
     "standings": "https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026",
     "schedule": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500"
@@ -9,7 +9,7 @@
     "next_games": 5,
     "prior_games": 5
   },
-  "completed_games": 277,
+  "completed_games": 278,
   "scheduled_games": 101,
   "teams": [
     {
@@ -17,19 +17,19 @@
       "name": "Santos",
       "abbreviation": "SAN",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2674.png",
-      "played": 27,
-      "points": 38,
-      "overall_rate": 0.4691,
+      "played": 28,
+      "points": 41,
+      "overall_rate": 0.4881,
       "venue": {
         "home": {
           "played": 14,
           "points": 22,
-          "rate": 0.5094
+          "rate": 0.5144
         },
         "away": {
-          "played": 13,
-          "points": 16,
-          "rate": 0.4266
+          "played": 14,
+          "points": 19,
+          "rate": 0.4618
         }
       },
       "remaining": 10,
@@ -129,7 +129,7 @@
           "opponent": "Santos",
           "opponent_abbreviation": "SAN",
           "location": "casa",
-          "difficulty": 0.4266
+          "difficulty": 0.4618
         },
         {
           "id": "401841270",
@@ -150,7 +150,7 @@
           "difficulty": 0.7669
         }
       ],
-      "sos": 0.5482
+      "sos": 0.5552
     },
     {
       "id": "2029",
@@ -217,10 +217,10 @@
           "opponent": "Santos",
           "opponent_abbreviation": "SAN",
           "location": "fora",
-          "difficulty": 0.5094
+          "difficulty": 0.5144
         }
       ],
-      "sos": 0.4999
+      "sos": 0.5009
     },
     {
       "id": "9967",
@@ -278,7 +278,7 @@
           "opponent": "Santos",
           "opponent_abbreviation": "SAN",
           "location": "fora",
-          "difficulty": 0.5094
+          "difficulty": 0.5144
         },
         {
           "id": "401841296",
@@ -287,10 +287,10 @@
           "opponent": "São Paulo",
           "opponent_abbreviation": "SAO",
           "location": "casa",
-          "difficulty": 0.2749
+          "difficulty": 0.2707
         }
       ],
-      "sos": 0.4925
+      "sos": 0.4927
     },
     {
       "id": "1936",
@@ -601,7 +601,7 @@
           "opponent": "Santos",
           "opponent_abbreviation": "SAN",
           "location": "fora",
-          "difficulty": 0.5094
+          "difficulty": 0.5144
         },
         {
           "id": "401841263",
@@ -640,7 +640,7 @@
           "difficulty": 0.5042
         }
       ],
-      "sos": 0.4736
+      "sos": 0.4746
     },
     {
       "id": "3454",
@@ -689,7 +689,7 @@
           "opponent": "São Paulo",
           "opponent_abbreviation": "SAO",
           "location": "fora",
-          "difficulty": 0.6235
+          "difficulty": 0.5865
         },
         {
           "id": "401841281",
@@ -710,7 +710,7 @@
           "difficulty": 0.6617
         }
       ],
-      "sos": 0.4717
+      "sos": 0.4643
     },
     {
       "id": "3445",
@@ -759,7 +759,7 @@
           "opponent": "Santos",
           "opponent_abbreviation": "SAN",
           "location": "casa",
-          "difficulty": 0.4266
+          "difficulty": 0.4618
         },
         {
           "id": "401841278",
@@ -780,7 +780,7 @@
           "difficulty": 0.3333
         }
       ],
-      "sos": 0.4489
+      "sos": 0.456
     },
     {
       "id": "2022",
@@ -811,7 +811,7 @@
           "opponent": "São Paulo",
           "opponent_abbreviation": "SAO",
           "location": "casa",
-          "difficulty": 0.2749
+          "difficulty": 0.2707
         },
         {
           "id": "401841260",
@@ -850,7 +850,7 @@
           "difficulty": 0.6187
         }
       ],
-      "sos": 0.4293
+      "sos": 0.4285
     },
     {
       "id": "3457",
@@ -890,7 +890,7 @@
           "opponent": "São Paulo",
           "opponent_abbreviation": "SAO",
           "location": "fora",
-          "difficulty": 0.6235
+          "difficulty": 0.5865
         },
         {
           "id": "401841272",
@@ -920,26 +920,26 @@
           "difficulty": 0.4524
         }
       ],
-      "sos": 0.4243
+      "sos": 0.4169
     },
     {
       "id": "2026",
       "name": "São Paulo",
       "abbreviation": "SAO",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2026.png",
-      "played": 27,
+      "played": 28,
       "points": 36,
-      "overall_rate": 0.4444,
+      "overall_rate": 0.4286,
       "venue": {
         "home": {
-          "played": 13,
+          "played": 14,
           "points": 27,
-          "rate": 0.6235
+          "rate": 0.5865
         },
         "away": {
           "played": 14,
           "points": 9,
-          "rate": 0.2749
+          "rate": 0.2707
         }
       },
       "remaining": 10,
@@ -1118,7 +1118,7 @@
           "opponent": "São Paulo",
           "opponent_abbreviation": "SAO",
           "location": "casa",
-          "difficulty": 0.2749
+          "difficulty": 0.2707
         },
         {
           "id": "401841295",
@@ -1130,7 +1130,7 @@
           "difficulty": 0.3952
         }
       ],
-      "sos": 0.4125
+      "sos": 0.4116
     },
     {
       "id": "3456",
