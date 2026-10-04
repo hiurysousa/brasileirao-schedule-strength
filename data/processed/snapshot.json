@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-10-03T22:28:14.481850Z",
+  "updated_at": "2026-10-04T13:30:05.029515Z",
   "sources": {
     "standings": "https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026",
     "schedule": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500"
@@ -9,7 +9,7 @@
     "next_games": 5,
     "prior_games": 5
   },
-  "completed_games": 278,
+  "completed_games": 279,
   "scheduled_games": 100,
   "teams": [
     {
@@ -50,7 +50,7 @@
           "opponent": "Atlético-MG",
           "opponent_abbreviation": "CAM",
           "location": "fora",
-          "difficulty": 0.6187
+          "difficulty": 0.6435
         },
         {
           "id": "401841277",
@@ -80,26 +80,26 @@
           "difficulty": 0.6196
         }
       ],
-      "sos": 0.6319
+      "sos": 0.6368
     },
     {
       "id": "7632",
       "name": "Atlético-MG",
       "abbreviation": "CAM",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7632.png",
-      "played": 27,
-      "points": 40,
-      "overall_rate": 0.4938,
+      "played": 28,
+      "points": 43,
+      "overall_rate": 0.5119,
       "venue": {
         "home": {
-          "played": 13,
-          "points": 26,
-          "rate": 0.6187
+          "played": 14,
+          "points": 29,
+          "rate": 0.6435
         },
         "away": {
           "played": 14,
           "points": 14,
-          "rate": 0.3756
+          "rate": 0.3803
         }
       },
       "remaining": 10,
@@ -208,7 +208,7 @@
           "opponent": "Red Bull Bragantino",
           "opponent_abbreviation": "BRA",
           "location": "casa",
-          "difficulty": 0.3977
+          "difficulty": 0.3738
         },
         {
           "id": "401841293",
@@ -220,7 +220,7 @@
           "difficulty": 0.5144
         }
       ],
-      "sos": 0.5009
+      "sos": 0.4962
     },
     {
       "id": "9967",
@@ -427,10 +427,10 @@
           "opponent": "Red Bull Bragantino",
           "opponent_abbreviation": "BRA",
           "location": "fora",
-          "difficulty": 0.4938
+          "difficulty": 0.4894
         }
       ],
-      "sos": 0.4899
+      "sos": 0.489
     },
     {
       "id": "3458",
@@ -461,7 +461,7 @@
           "opponent": "Atlético-MG",
           "opponent_abbreviation": "CAM",
           "location": "casa",
-          "difficulty": 0.3756
+          "difficulty": 0.3803
         },
         {
           "id": "401841265",
@@ -500,7 +500,7 @@
           "difficulty": 0.5294
         }
       ],
-      "sos": 0.4769
+      "sos": 0.4779
     },
     {
       "id": "819",
@@ -558,7 +558,7 @@
           "opponent": "Atlético-MG",
           "opponent_abbreviation": "CAM",
           "location": "casa",
-          "difficulty": 0.3756
+          "difficulty": 0.3803
         },
         {
           "id": "401841292",
@@ -570,7 +570,7 @@
           "difficulty": 0.5042
         }
       ],
-      "sos": 0.4746
+      "sos": 0.4755
     },
     {
       "id": "3454",
@@ -750,7 +750,7 @@
           "opponent": "Red Bull Bragantino",
           "opponent_abbreviation": "BRA",
           "location": "fora",
-          "difficulty": 0.4938
+          "difficulty": 0.4894
         },
         {
           "id": "401841276",
@@ -777,10 +777,10 @@
           "opponent": "Atlético-MG",
           "opponent_abbreviation": "CAM",
           "location": "fora",
-          "difficulty": 0.6187
+          "difficulty": 0.6435
         }
       ],
-      "sos": 0.4285
+      "sos": 0.4326
     },
     {
       "id": "3457",
@@ -851,6 +851,76 @@
         }
       ],
       "sos": 0.4169
+    },
+    {
+      "id": "3456",
+      "name": "Coritiba",
+      "abbreviation": "CFC",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3456.png",
+      "played": 28,
+      "points": 38,
+      "overall_rate": 0.4524,
+      "venue": {
+        "home": {
+          "played": 14,
+          "points": 19,
+          "rate": 0.4524
+        },
+        "away": {
+          "played": 14,
+          "points": 19,
+          "rate": 0.4524
+        }
+      },
+      "remaining": 10,
+      "next_games": [
+        {
+          "id": "401841248",
+          "date": "2026-10-09T00:30:00Z",
+          "opponent_id": "3445",
+          "opponent": "Fluminense",
+          "opponent_abbreviation": "FLU",
+          "location": "fora",
+          "difficulty": 0.7293
+        },
+        {
+          "id": "401841264",
+          "date": "2026-10-12T19:00:00Z",
+          "opponent_id": "6086",
+          "opponent": "Botafogo",
+          "opponent_abbreviation": "BOT",
+          "location": "casa",
+          "difficulty": 0.3553
+        },
+        {
+          "id": "401841270",
+          "date": "2026-10-17T21:30:00Z",
+          "opponent_id": "7632",
+          "opponent": "Atlético-MG",
+          "opponent_abbreviation": "CAM",
+          "location": "fora",
+          "difficulty": 0.6435
+        },
+        {
+          "id": "401841279",
+          "date": "2026-10-26T22:30:00Z",
+          "opponent_id": "6273",
+          "opponent": "Grêmio",
+          "opponent_abbreviation": "GRE",
+          "location": "casa",
+          "difficulty": 0.161
+        },
+        {
+          "id": "401841294",
+          "date": "2026-10-29T22:30:00Z",
+          "opponent_id": "3457",
+          "opponent": "Vitória",
+          "opponent_abbreviation": "VIT",
+          "location": "casa",
+          "difficulty": 0.1911
+        }
+      ],
+      "sos": 0.416
     },
     {
       "id": "2026",
@@ -1021,7 +1091,7 @@
           "opponent": "Red Bull Bragantino",
           "opponent_abbreviation": "BRA",
           "location": "fora",
-          "difficulty": 0.4938
+          "difficulty": 0.4894
         },
         {
           "id": "401841266",
@@ -1060,77 +1130,7 @@
           "difficulty": 0.3952
         }
       ],
-      "sos": 0.4116
-    },
-    {
-      "id": "3456",
-      "name": "Coritiba",
-      "abbreviation": "CFC",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3456.png",
-      "played": 28,
-      "points": 38,
-      "overall_rate": 0.4524,
-      "venue": {
-        "home": {
-          "played": 14,
-          "points": 19,
-          "rate": 0.4524
-        },
-        "away": {
-          "played": 14,
-          "points": 19,
-          "rate": 0.4524
-        }
-      },
-      "remaining": 10,
-      "next_games": [
-        {
-          "id": "401841248",
-          "date": "2026-10-09T00:30:00Z",
-          "opponent_id": "3445",
-          "opponent": "Fluminense",
-          "opponent_abbreviation": "FLU",
-          "location": "fora",
-          "difficulty": 0.7293
-        },
-        {
-          "id": "401841264",
-          "date": "2026-10-12T19:00:00Z",
-          "opponent_id": "6086",
-          "opponent": "Botafogo",
-          "opponent_abbreviation": "BOT",
-          "location": "casa",
-          "difficulty": 0.3553
-        },
-        {
-          "id": "401841270",
-          "date": "2026-10-17T21:30:00Z",
-          "opponent_id": "7632",
-          "opponent": "Atlético-MG",
-          "opponent_abbreviation": "CAM",
-          "location": "fora",
-          "difficulty": 0.6187
-        },
-        {
-          "id": "401841279",
-          "date": "2026-10-26T22:30:00Z",
-          "opponent_id": "6273",
-          "opponent": "Grêmio",
-          "opponent_abbreviation": "GRE",
-          "location": "casa",
-          "difficulty": 0.161
-        },
-        {
-          "id": "401841294",
-          "date": "2026-10-29T22:30:00Z",
-          "opponent_id": "3457",
-          "opponent": "Vitória",
-          "opponent_abbreviation": "VIT",
-          "location": "casa",
-          "difficulty": 0.1911
-        }
-      ],
-      "sos": 0.4111
+      "sos": 0.4108
     },
     {
       "id": "874",
@@ -1207,19 +1207,19 @@
       "name": "Red Bull Bragantino",
       "abbreviation": "BRA",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6079.png",
-      "played": 27,
+      "played": 28,
       "points": 36,
-      "overall_rate": 0.4444,
+      "overall_rate": 0.4286,
       "venue": {
         "home": {
           "played": 13,
           "points": 20,
-          "rate": 0.4938
+          "rate": 0.4894
         },
         "away": {
-          "played": 14,
+          "played": 15,
           "points": 16,
-          "rate": 0.3977
+          "rate": 0.3738
         }
       },
       "remaining": 10,
@@ -1319,7 +1319,7 @@
           "opponent": "Red Bull Bragantino",
           "opponent_abbreviation": "BRA",
           "location": "casa",
-          "difficulty": 0.3977
+          "difficulty": 0.3738
         },
         {
           "id": "401841287",
@@ -1340,7 +1340,7 @@
           "difficulty": 0.3553
         }
       ],
-      "sos": 0.3996
+      "sos": 0.3948
     },
     {
       "id": "6086",
