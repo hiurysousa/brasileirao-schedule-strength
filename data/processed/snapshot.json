@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-10-06T00:59:44.469595Z",
+  "updated_at": "2026-10-06T14:31:35.306246Z",
   "sources": {
     "standings": "https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026",
     "schedule": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500"
@@ -605,7 +605,7 @@
         },
         {
           "id": "401841262",
-          "date": "2026-10-10T20:00:00Z",
+          "date": "2026-10-10T21:00:00Z",
           "opponent_id": "4936",
           "opponent": "Remo",
           "opponent_abbreviation": "REMO",
@@ -1305,7 +1305,7 @@
         },
         {
           "id": "401841262",
-          "date": "2026-10-10T20:00:00Z",
+          "date": "2026-10-10T21:00:00Z",
           "opponent_id": "3454",
           "opponent": "Vasco da Gama",
           "opponent_abbreviation": "VAS",
