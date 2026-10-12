@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-10-11T23:14:27.085471Z",
+  "updated_at": "2026-10-12T17:02:53.095899Z",
   "sources": {
     "standings": "https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026",
     "schedule": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500"
@@ -9,7 +9,7 @@
     "next_games": 5,
     "prior_games": 5
   },
-  "completed_games": 295,
+  "completed_games": 296,
   "scheduled_games": 83,
   "teams": [
     {
@@ -50,7 +50,7 @@
           "opponent": "Bahia",
           "opponent_abbreviation": "BAH",
           "location": "casa",
-          "difficulty": 0.4989
+          "difficulty": 0.5028
         },
         {
           "id": "401841293",
@@ -80,7 +80,7 @@
           "difficulty": 0.4483
         }
       ],
-      "sos": 0.5588
+      "sos": 0.5596
     },
     {
       "id": "6273",
@@ -147,10 +147,10 @@
           "opponent": "Bahia",
           "opponent_abbreviation": "BAH",
           "location": "casa",
-          "difficulty": 0.4989
+          "difficulty": 0.5028
         }
       ],
-      "sos": 0.5376
+      "sos": 0.5384
     },
     {
       "id": "7632",
@@ -217,10 +217,10 @@
           "opponent": "Mirassol",
           "opponent_abbreviation": "MIR",
           "location": "fora",
-          "difficulty": 0.4782
+          "difficulty": 0.475
         }
       ],
-      "sos": 0.5257
+      "sos": 0.5251
     },
     {
       "id": "3454",
@@ -297,19 +297,19 @@
       "name": "Bahia",
       "abbreviation": "BAH",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9967.png",
-      "played": 29,
-      "points": 46,
-      "overall_rate": 0.5287,
+      "played": 30,
+      "points": 49,
+      "overall_rate": 0.5444,
       "venue": {
         "home": {
-          "played": 14,
-          "points": 24,
-          "rate": 0.5602
+          "played": 15,
+          "points": 27,
+          "rate": 0.5861
         },
         "away": {
           "played": 15,
           "points": 22,
-          "rate": 0.4989
+          "rate": 0.5028
         }
       },
       "remaining": 8,
@@ -391,7 +391,7 @@
           "opponent": "Mirassol",
           "opponent_abbreviation": "MIR",
           "location": "fora",
-          "difficulty": 0.4782
+          "difficulty": 0.475
         },
         {
           "id": "401841285",
@@ -430,7 +430,7 @@
           "difficulty": 0.5006
         }
       ],
-      "sos": 0.4996
+      "sos": 0.4989
     },
     {
       "id": "2022",
@@ -497,10 +497,10 @@
           "opponent": "Bahia",
           "opponent_abbreviation": "BAH",
           "location": "casa",
-          "difficulty": 0.4989
+          "difficulty": 0.5028
         }
       ],
-      "sos": 0.4797
+      "sos": 0.4805
     },
     {
       "id": "2029",
@@ -881,7 +881,7 @@
           "opponent": "Bahia",
           "opponent_abbreviation": "BAH",
           "location": "fora",
-          "difficulty": 0.5602
+          "difficulty": 0.5861
         },
         {
           "id": "401841286",
@@ -920,7 +920,77 @@
           "difficulty": 0.467
         }
       ],
-      "sos": 0.4156
+      "sos": 0.4207
+    },
+    {
+      "id": "2026",
+      "name": "São Paulo",
+      "abbreviation": "SAO",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2026.png",
+      "played": 30,
+      "points": 39,
+      "overall_rate": 0.4333,
+      "venue": {
+        "home": {
+          "played": 15,
+          "points": 30,
+          "rate": 0.6083
+        },
+        "away": {
+          "played": 15,
+          "points": 9,
+          "rate": 0.2583
+        }
+      },
+      "remaining": 8,
+      "next_games": [
+        {
+          "id": "401841273",
+          "date": "2026-10-18T00:00:00Z",
+          "opponent_id": "3454",
+          "opponent": "Vasco da Gama",
+          "opponent_abbreviation": "VAS",
+          "location": "casa",
+          "difficulty": 0.2989
+        },
+        {
+          "id": "401841284",
+          "date": "2026-10-24T19:30:00Z",
+          "opponent_id": "9169",
+          "opponent": "Mirassol",
+          "opponent_abbreviation": "MIR",
+          "location": "fora",
+          "difficulty": 0.475
+        },
+        {
+          "id": "401841296",
+          "date": "2026-10-29T00:30:00Z",
+          "opponent_id": "9967",
+          "opponent": "Bahia",
+          "opponent_abbreviation": "BAH",
+          "location": "fora",
+          "difficulty": 0.5861
+        },
+        {
+          "id": "401841298",
+          "date": "2026-11-05T00:30:00Z",
+          "opponent_id": "874",
+          "opponent": "Corinthians",
+          "opponent_abbreviation": "COR",
+          "location": "casa",
+          "difficulty": 0.3222
+        },
+        {
+          "id": "401841309",
+          "date": "2026-11-18T20:00:00Z",
+          "opponent_id": "3445",
+          "opponent": "Fluminense",
+          "opponent_abbreviation": "FLU",
+          "location": "casa",
+          "difficulty": 0.3917
+        }
+      ],
+      "sos": 0.4148
     },
     {
       "id": "3457",
@@ -1057,80 +1127,10 @@
           "opponent": "Mirassol",
           "opponent_abbreviation": "MIR",
           "location": "casa",
-          "difficulty": 0.2753
+          "difficulty": 0.2583
         }
       ],
-      "sos": 0.413
-    },
-    {
-      "id": "2026",
-      "name": "São Paulo",
-      "abbreviation": "SAO",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2026.png",
-      "played": 30,
-      "points": 39,
-      "overall_rate": 0.4333,
-      "venue": {
-        "home": {
-          "played": 15,
-          "points": 30,
-          "rate": 0.6083
-        },
-        "away": {
-          "played": 15,
-          "points": 9,
-          "rate": 0.2583
-        }
-      },
-      "remaining": 8,
-      "next_games": [
-        {
-          "id": "401841273",
-          "date": "2026-10-18T00:00:00Z",
-          "opponent_id": "3454",
-          "opponent": "Vasco da Gama",
-          "opponent_abbreviation": "VAS",
-          "location": "casa",
-          "difficulty": 0.2989
-        },
-        {
-          "id": "401841284",
-          "date": "2026-10-24T19:30:00Z",
-          "opponent_id": "9169",
-          "opponent": "Mirassol",
-          "opponent_abbreviation": "MIR",
-          "location": "fora",
-          "difficulty": 0.4782
-        },
-        {
-          "id": "401841296",
-          "date": "2026-10-29T00:30:00Z",
-          "opponent_id": "9967",
-          "opponent": "Bahia",
-          "opponent_abbreviation": "BAH",
-          "location": "fora",
-          "difficulty": 0.5602
-        },
-        {
-          "id": "401841298",
-          "date": "2026-11-05T00:30:00Z",
-          "opponent_id": "874",
-          "opponent": "Corinthians",
-          "opponent_abbreviation": "COR",
-          "location": "casa",
-          "difficulty": 0.3222
-        },
-        {
-          "id": "401841309",
-          "date": "2026-11-18T20:00:00Z",
-          "opponent_id": "3445",
-          "opponent": "Fluminense",
-          "opponent_abbreviation": "FLU",
-          "location": "casa",
-          "difficulty": 0.3917
-        }
-      ],
-      "sos": 0.4102
+      "sos": 0.4096
     },
     {
       "id": "874",
@@ -1179,7 +1179,7 @@
           "opponent": "Mirassol",
           "opponent_abbreviation": "MIR",
           "location": "casa",
-          "difficulty": 0.2753
+          "difficulty": 0.2583
         },
         {
           "id": "401841298",
@@ -1200,7 +1200,7 @@
           "difficulty": 0.3515
         }
       ],
-      "sos": 0.3838
+      "sos": 0.3804
     },
     {
       "id": "3456",
@@ -1347,19 +1347,19 @@
       "name": "Mirassol",
       "abbreviation": "MIR",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9169.png",
-      "played": 29,
+      "played": 30,
       "points": 33,
-      "overall_rate": 0.3793,
+      "overall_rate": 0.3667,
       "venue": {
         "home": {
           "played": 15,
           "points": 23,
-          "rate": 0.4782
+          "rate": 0.475
         },
         "away": {
-          "played": 14,
+          "played": 15,
           "points": 10,
-          "rate": 0.2753
+          "rate": 0.2583
         }
       },
       "remaining": 8,
