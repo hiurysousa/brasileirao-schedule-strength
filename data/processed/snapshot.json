@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-10-19T23:09:46.630714Z",
+  "updated_at": "2026-10-20T13:04:11.583872Z",
   "sources": {
     "standings": "https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026",
     "schedule": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500"
@@ -9,7 +9,7 @@
     "next_games": 5,
     "prior_games": 5
   },
-  "completed_games": 308,
+  "completed_games": 309,
   "scheduled_games": 70,
   "teams": [
     {
@@ -147,7 +147,7 @@
           "opponent": "Corinthians",
           "opponent_abbreviation": "COR",
           "location": "casa",
-          "difficulty": 0.3222
+          "difficulty": 0.322
         }
       ],
       "sos": 0.5167
@@ -251,7 +251,7 @@
           "opponent": "Corinthians",
           "opponent_abbreviation": "COR",
           "location": "casa",
-          "difficulty": 0.3222
+          "difficulty": 0.322
         },
         {
           "id": "401841292",
@@ -297,19 +297,19 @@
       "name": "Corinthians",
       "abbreviation": "COR",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/874.png",
-      "played": 30,
-      "points": 32,
-      "overall_rate": 0.3556,
+      "played": 31,
+      "points": 33,
+      "overall_rate": 0.3548,
       "venue": {
         "home": {
-          "played": 15,
-          "points": 18,
-          "rate": 0.3889
+          "played": 16,
+          "points": 19,
+          "rate": 0.3861
         },
         "away": {
           "played": 15,
           "points": 14,
-          "rate": 0.3222
+          "rate": 0.322
         }
       },
       "remaining": 7,
@@ -391,7 +391,7 @@
           "opponent": "Vitória",
           "opponent_abbreviation": "VIT",
           "location": "fora",
-          "difficulty": 0.6167
+          "difficulty": 0.6161
         },
         {
           "id": "401841290",
@@ -430,7 +430,7 @@
           "difficulty": 0.2366
         }
       ],
-      "sos": 0.4812
+      "sos": 0.4811
     },
     {
       "id": "2029",
@@ -698,7 +698,7 @@
           "opponent": "Vitória",
           "opponent_abbreviation": "VIT",
           "location": "fora",
-          "difficulty": 0.6167
+          "difficulty": 0.6161
         },
         {
           "id": "401841321",
@@ -710,7 +710,7 @@
           "difficulty": 0.2806
         }
       ],
-      "sos": 0.4596
+      "sos": 0.4594
     },
     {
       "id": "9967",
@@ -899,7 +899,7 @@
           "opponent": "Corinthians",
           "opponent_abbreviation": "COR",
           "location": "casa",
-          "difficulty": 0.3222
+          "difficulty": 0.322
         },
         {
           "id": "401841309",
@@ -987,10 +987,10 @@
           "opponent": "Vitória",
           "opponent_abbreviation": "VIT",
           "location": "casa",
-          "difficulty": 0.1833
+          "difficulty": 0.19
         }
       ],
-      "sos": 0.4277
+      "sos": 0.4291
     },
     {
       "id": "3445",
@@ -1039,7 +1039,7 @@
           "opponent": "Vitória",
           "opponent_abbreviation": "VIT",
           "location": "fora",
-          "difficulty": 0.6167
+          "difficulty": 0.6161
         },
         {
           "id": "401841309",
@@ -1060,26 +1060,26 @@
           "difficulty": 0.2634
         }
       ],
-      "sos": 0.4154
+      "sos": 0.4153
     },
     {
       "id": "3457",
       "name": "Vitória",
       "abbreviation": "VIT",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3457.png",
-      "played": 30,
-      "points": 36,
-      "overall_rate": 0.4,
+      "played": 31,
+      "points": 37,
+      "overall_rate": 0.3978,
       "venue": {
         "home": {
           "played": 15,
           "points": 31,
-          "rate": 0.6167
+          "rate": 0.6161
         },
         "away": {
-          "played": 15,
-          "points": 5,
-          "rate": 0.1833
+          "played": 16,
+          "points": 6,
+          "rate": 0.19
         }
       },
       "remaining": 7,
@@ -1170,7 +1170,7 @@
           "opponent": "Corinthians",
           "opponent_abbreviation": "COR",
           "location": "fora",
-          "difficulty": 0.3889
+          "difficulty": 0.3861
         },
         {
           "id": "401841304",
@@ -1200,7 +1200,7 @@
           "difficulty": 0.702
         }
       ],
-      "sos": 0.3968
+      "sos": 0.3962
     },
     {
       "id": "9318",
@@ -1310,7 +1310,7 @@
           "opponent": "Vitória",
           "opponent_abbreviation": "VIT",
           "location": "casa",
-          "difficulty": 0.1833
+          "difficulty": 0.19
         },
         {
           "id": "401841301",
@@ -1340,7 +1340,7 @@
           "difficulty": 0.554
         }
       ],
-      "sos": 0.3476
+      "sos": 0.3489
     },
     {
       "id": "6086",
@@ -1398,7 +1398,7 @@
           "opponent": "Corinthians",
           "opponent_abbreviation": "COR",
           "location": "fora",
-          "difficulty": 0.3889
+          "difficulty": 0.3861
         },
         {
           "id": "401841326",
@@ -1410,7 +1410,7 @@
           "difficulty": 0.2629
         }
       ],
-      "sos": 0.3452
+      "sos": 0.3447
     }
   ]
 }
