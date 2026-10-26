@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-10-26T14:36:09.871625Z",
+  "updated_at": "2026-10-26T23:24:25.999687Z",
   "sources": {
     "standings": "https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026",
     "schedule": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500"
@@ -10,7 +10,7 @@
     "prior_games": 5
   },
   "completed_games": 317,
-  "scheduled_games": 62,
+  "scheduled_games": 60,
   "teams": [
     {
       "id": "3454",
@@ -172,17 +172,8 @@
           "rate": 0.1667
         }
       },
-      "remaining": 7,
+      "remaining": 6,
       "next_games": [
-        {
-          "id": "401841279",
-          "date": "2026-10-26T22:30:00Z",
-          "opponent_id": "3456",
-          "opponent": "Coritiba",
-          "opponent_abbreviation": "CFC",
-          "location": "fora",
-          "difficulty": 0.4382
-        },
         {
           "id": "401841290",
           "date": "2026-10-30T00:30:00Z",
@@ -218,9 +209,18 @@
           "opponent_abbreviation": "SAN",
           "location": "fora",
           "difficulty": 0.495
+        },
+        {
+          "id": "401841334",
+          "date": "2026-11-28T20:00:00Z",
+          "opponent_id": "874",
+          "opponent": "Corinthians",
+          "opponent_abbreviation": "COR",
+          "location": "fora",
+          "difficulty": 0.3834
         }
       ],
-      "sos": 0.5371
+      "sos": 0.5261
     },
     {
       "id": "4936",
@@ -293,74 +293,74 @@
       "sos": 0.5125
     },
     {
-      "id": "7632",
-      "name": "Atlético-MG",
-      "abbreviation": "CAM",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7632.png",
+      "id": "819",
+      "name": "Flamengo",
+      "abbreviation": "FLA",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/819.png",
       "played": 31,
-      "points": 50,
-      "overall_rate": 0.5376,
+      "points": 67,
+      "overall_rate": 0.7204,
       "venue": {
         "home": {
-          "played": 16,
-          "points": 35,
-          "rate": 0.6836
+          "played": 15,
+          "points": 36,
+          "rate": 0.7801
         },
         "away": {
-          "played": 15,
-          "points": 15,
-          "rate": 0.3844
+          "played": 16,
+          "points": 31,
+          "rate": 0.6636
         }
       },
-      "remaining": 7,
+      "remaining": 6,
       "next_games": [
         {
-          "id": "401841286",
-          "date": "2026-10-26T23:00:00Z",
-          "opponent_id": "819",
-          "opponent": "Flamengo",
-          "opponent_abbreviation": "FLA",
+          "id": "401841292",
+          "date": "2026-10-29T23:00:00Z",
+          "opponent_id": "3454",
+          "opponent": "Vasco da Gama",
+          "opponent_abbreviation": "VAS",
           "location": "fora",
-          "difficulty": 0.7801
+          "difficulty": 0.5259
         },
         {
-          "id": "401841288",
-          "date": "2026-10-29T22:30:00Z",
-          "opponent_id": "2022",
-          "opponent": "Cruzeiro",
-          "opponent_abbreviation": "CRU",
+          "id": "401841307",
+          "date": "2026-11-04T22:30:00Z",
+          "opponent_id": "6273",
+          "opponent": "Grêmio",
+          "opponent_abbreviation": "GRE",
           "location": "casa",
-          "difficulty": 0.499
+          "difficulty": 0.1667
         },
         {
-          "id": "401841305",
-          "date": "2026-11-05T00:30:00Z",
-          "opponent_id": "6086",
-          "opponent": "Botafogo",
-          "opponent_abbreviation": "BOT",
-          "location": "fora",
-          "difficulty": 0.4777
-        },
-        {
-          "id": "401841311",
+          "id": "401841313",
           "date": "2026-11-18T20:00:00Z",
-          "opponent_id": "9169",
-          "opponent": "Mirassol",
-          "opponent_abbreviation": "MIR",
-          "location": "fora",
-          "difficulty": 0.4967
+          "opponent_id": "3458",
+          "opponent": "Athletico Paranaense",
+          "opponent_abbreviation": "CAP",
+          "location": "casa",
+          "difficulty": 0.4831
         },
         {
-          "id": "401841319",
+          "id": "401841322",
           "date": "2026-11-21T20:00:00Z",
-          "opponent_id": "874",
-          "opponent": "Corinthians",
-          "opponent_abbreviation": "COR",
-          "location": "casa",
-          "difficulty": 0.3041
+          "opponent_id": "2029",
+          "opponent": "Palmeiras",
+          "opponent_abbreviation": "PAL",
+          "location": "fora",
+          "difficulty": 0.7902
+        },
+        {
+          "id": "401841333",
+          "date": "2026-11-28T20:00:00Z",
+          "opponent_id": "3456",
+          "opponent": "Coritiba",
+          "opponent_abbreviation": "CFC",
+          "location": "fora",
+          "difficulty": 0.4382
         }
       ],
-      "sos": 0.5115
+      "sos": 0.4808
     },
     {
       "id": "2674",
@@ -431,76 +431,6 @@
         }
       ],
       "sos": 0.4722
-    },
-    {
-      "id": "819",
-      "name": "Flamengo",
-      "abbreviation": "FLA",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/819.png",
-      "played": 31,
-      "points": 67,
-      "overall_rate": 0.7204,
-      "venue": {
-        "home": {
-          "played": 15,
-          "points": 36,
-          "rate": 0.7801
-        },
-        "away": {
-          "played": 16,
-          "points": 31,
-          "rate": 0.6636
-        }
-      },
-      "remaining": 7,
-      "next_games": [
-        {
-          "id": "401841286",
-          "date": "2026-10-26T23:00:00Z",
-          "opponent_id": "7632",
-          "opponent": "Atlético-MG",
-          "opponent_abbreviation": "CAM",
-          "location": "casa",
-          "difficulty": 0.3844
-        },
-        {
-          "id": "401841292",
-          "date": "2026-10-29T23:00:00Z",
-          "opponent_id": "3454",
-          "opponent": "Vasco da Gama",
-          "opponent_abbreviation": "VAS",
-          "location": "fora",
-          "difficulty": 0.5259
-        },
-        {
-          "id": "401841307",
-          "date": "2026-11-04T22:30:00Z",
-          "opponent_id": "6273",
-          "opponent": "Grêmio",
-          "opponent_abbreviation": "GRE",
-          "location": "casa",
-          "difficulty": 0.1667
-        },
-        {
-          "id": "401841313",
-          "date": "2026-11-18T20:00:00Z",
-          "opponent_id": "3458",
-          "opponent": "Athletico Paranaense",
-          "opponent_abbreviation": "CAP",
-          "location": "casa",
-          "difficulty": 0.4831
-        },
-        {
-          "id": "401841322",
-          "date": "2026-11-21T20:00:00Z",
-          "opponent_id": "2029",
-          "opponent": "Palmeiras",
-          "opponent_abbreviation": "PAL",
-          "location": "fora",
-          "difficulty": 0.7902
-        }
-      ],
-      "sos": 0.4701
     },
     {
       "id": "3445",
@@ -711,6 +641,76 @@
         }
       ],
       "sos": 0.4555
+    },
+    {
+      "id": "3456",
+      "name": "Coritiba",
+      "abbreviation": "CFC",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3456.png",
+      "played": 31,
+      "points": 39,
+      "overall_rate": 0.4194,
+      "venue": {
+        "home": {
+          "played": 15,
+          "points": 20,
+          "rate": 0.4382
+        },
+        "away": {
+          "played": 16,
+          "points": 19,
+          "rate": 0.4014
+        }
+      },
+      "remaining": 6,
+      "next_games": [
+        {
+          "id": "401841294",
+          "date": "2026-10-31T19:00:00Z",
+          "opponent_id": "3457",
+          "opponent": "Vitória",
+          "opponent_abbreviation": "VIT",
+          "location": "casa",
+          "difficulty": 0.1895
+        },
+        {
+          "id": "401841301",
+          "date": "2026-11-04T00:30:00Z",
+          "opponent_id": "1936",
+          "opponent": "Internacional",
+          "opponent_abbreviation": "INT",
+          "location": "fora",
+          "difficulty": 0.4043
+        },
+        {
+          "id": "401841315",
+          "date": "2026-11-18T20:00:00Z",
+          "opponent_id": "2674",
+          "opponent": "Santos",
+          "opponent_abbreviation": "SAN",
+          "location": "casa",
+          "difficulty": 0.4633
+        },
+        {
+          "id": "401841327",
+          "date": "2026-11-21T20:00:00Z",
+          "opponent_id": "9967",
+          "opponent": "Bahia",
+          "opponent_abbreviation": "BAH",
+          "location": "fora",
+          "difficulty": 0.5526
+        },
+        {
+          "id": "401841333",
+          "date": "2026-11-28T20:00:00Z",
+          "opponent_id": "819",
+          "opponent": "Flamengo",
+          "opponent_abbreviation": "FLA",
+          "location": "casa",
+          "difficulty": 0.6636
+        }
+      ],
+      "sos": 0.4547
     },
     {
       "id": "9967",
@@ -1063,6 +1063,76 @@
       "sos": 0.4157
     },
     {
+      "id": "7632",
+      "name": "Atlético-MG",
+      "abbreviation": "CAM",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7632.png",
+      "played": 31,
+      "points": 50,
+      "overall_rate": 0.5376,
+      "venue": {
+        "home": {
+          "played": 16,
+          "points": 35,
+          "rate": 0.6836
+        },
+        "away": {
+          "played": 15,
+          "points": 15,
+          "rate": 0.3844
+        }
+      },
+      "remaining": 6,
+      "next_games": [
+        {
+          "id": "401841288",
+          "date": "2026-10-29T22:30:00Z",
+          "opponent_id": "2022",
+          "opponent": "Cruzeiro",
+          "opponent_abbreviation": "CRU",
+          "location": "casa",
+          "difficulty": 0.499
+        },
+        {
+          "id": "401841305",
+          "date": "2026-11-05T00:30:00Z",
+          "opponent_id": "6086",
+          "opponent": "Botafogo",
+          "opponent_abbreviation": "BOT",
+          "location": "fora",
+          "difficulty": 0.4777
+        },
+        {
+          "id": "401841311",
+          "date": "2026-11-18T20:00:00Z",
+          "opponent_id": "9169",
+          "opponent": "Mirassol",
+          "opponent_abbreviation": "MIR",
+          "location": "fora",
+          "difficulty": 0.4967
+        },
+        {
+          "id": "401841319",
+          "date": "2026-11-21T20:00:00Z",
+          "opponent_id": "874",
+          "opponent": "Corinthians",
+          "opponent_abbreviation": "COR",
+          "location": "casa",
+          "difficulty": 0.3041
+        },
+        {
+          "id": "401841328",
+          "date": "2026-11-28T20:00:00Z",
+          "opponent_id": "3454",
+          "opponent": "Vasco da Gama",
+          "opponent_abbreviation": "VAS",
+          "location": "casa",
+          "difficulty": 0.2855
+        }
+      ],
+      "sos": 0.4126
+    },
+    {
       "id": "3457",
       "name": "Vitória",
       "abbreviation": "VIT",
@@ -1341,76 +1411,6 @@
         }
       ],
       "sos": 0.3682
-    },
-    {
-      "id": "3456",
-      "name": "Coritiba",
-      "abbreviation": "CFC",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3456.png",
-      "played": 31,
-      "points": 39,
-      "overall_rate": 0.4194,
-      "venue": {
-        "home": {
-          "played": 15,
-          "points": 20,
-          "rate": 0.4382
-        },
-        "away": {
-          "played": 16,
-          "points": 19,
-          "rate": 0.4014
-        }
-      },
-      "remaining": 7,
-      "next_games": [
-        {
-          "id": "401841279",
-          "date": "2026-10-26T22:30:00Z",
-          "opponent_id": "6273",
-          "opponent": "Grêmio",
-          "opponent_abbreviation": "GRE",
-          "location": "casa",
-          "difficulty": 0.1667
-        },
-        {
-          "id": "401841294",
-          "date": "2026-10-31T19:00:00Z",
-          "opponent_id": "3457",
-          "opponent": "Vitória",
-          "opponent_abbreviation": "VIT",
-          "location": "casa",
-          "difficulty": 0.1895
-        },
-        {
-          "id": "401841301",
-          "date": "2026-11-04T00:30:00Z",
-          "opponent_id": "1936",
-          "opponent": "Internacional",
-          "opponent_abbreviation": "INT",
-          "location": "fora",
-          "difficulty": 0.4043
-        },
-        {
-          "id": "401841315",
-          "date": "2026-11-18T20:00:00Z",
-          "opponent_id": "2674",
-          "opponent": "Santos",
-          "opponent_abbreviation": "SAN",
-          "location": "casa",
-          "difficulty": 0.4633
-        },
-        {
-          "id": "401841327",
-          "date": "2026-11-21T20:00:00Z",
-          "opponent_id": "9967",
-          "opponent": "Bahia",
-          "opponent_abbreviation": "BAH",
-          "location": "fora",
-          "difficulty": 0.5526
-        }
-      ],
-      "sos": 0.3553
     }
   ]
 }
