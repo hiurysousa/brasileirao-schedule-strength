@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-10-30T23:18:59.024203Z",
+  "updated_at": "2026-10-31T13:55:34.956167Z",
   "sources": {
     "standings": "https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026",
     "schedule": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500"
@@ -9,7 +9,7 @@
     "next_games": 5,
     "prior_games": 5
   },
-  "completed_games": 327,
+  "completed_games": 328,
   "scheduled_games": 51,
   "teams": [
     {
@@ -41,7 +41,7 @@
           "opponent": "Mirassol",
           "opponent_abbreviation": "MIR",
           "location": "casa",
-          "difficulty": 0.263
+          "difficulty": 0.2477
         },
         {
           "id": "401841310",
@@ -80,7 +80,7 @@
           "difficulty": 0.7946
         }
       ],
-      "sos": 0.5135
+      "sos": 0.5104
     },
     {
       "id": "3445",
@@ -129,7 +129,7 @@
           "opponent": "Mirassol",
           "opponent_abbreviation": "MIR",
           "location": "casa",
-          "difficulty": 0.263
+          "difficulty": 0.2477
         },
         {
           "id": "401841337",
@@ -150,7 +150,7 @@
           "difficulty": 0.5344
         }
       ],
-      "sos": 0.5103
+      "sos": 0.5073
     },
     {
       "id": "4936",
@@ -217,10 +217,80 @@
           "opponent": "Corinthians",
           "opponent_abbreviation": "COR",
           "location": "casa",
-          "difficulty": 0.3041
+          "difficulty": 0.3088
         }
       ],
-      "sos": 0.5025
+      "sos": 0.5034
+    },
+    {
+      "id": "6273",
+      "name": "Grêmio",
+      "abbreviation": "GRE",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6273.png",
+      "played": 33,
+      "points": 37,
+      "overall_rate": 0.3737,
+      "venue": {
+        "home": {
+          "played": 17,
+          "points": 29,
+          "rate": 0.5243
+        },
+        "away": {
+          "played": 16,
+          "points": 8,
+          "rate": 0.216
+        }
+      },
+      "remaining": 5,
+      "next_games": [
+        {
+          "id": "401841307",
+          "date": "2026-11-04T22:30:00Z",
+          "opponent_id": "819",
+          "opponent": "Flamengo",
+          "opponent_abbreviation": "FLA",
+          "location": "fora",
+          "difficulty": 0.7946
+        },
+        {
+          "id": "401841312",
+          "date": "2026-11-19T00:30:00Z",
+          "opponent_id": "9967",
+          "opponent": "Bahia",
+          "opponent_abbreviation": "BAH",
+          "location": "casa",
+          "difficulty": 0.4925
+        },
+        {
+          "id": "401841320",
+          "date": "2026-11-24T00:00:00Z",
+          "opponent_id": "2674",
+          "opponent": "Santos",
+          "opponent_abbreviation": "SAN",
+          "location": "fora",
+          "difficulty": 0.4867
+        },
+        {
+          "id": "401841334",
+          "date": "2026-11-28T20:00:00Z",
+          "opponent_id": "874",
+          "opponent": "Corinthians",
+          "opponent_abbreviation": "COR",
+          "location": "fora",
+          "difficulty": 0.416
+        },
+        {
+          "id": "401841347",
+          "date": "2026-12-02T20:00:00Z",
+          "opponent_id": "9169",
+          "opponent": "Mirassol",
+          "opponent_abbreviation": "MIR",
+          "location": "casa",
+          "difficulty": 0.2477
+        }
+      ],
+      "sos": 0.4875
     },
     {
       "id": "2022",
@@ -291,76 +361,6 @@
         }
       ],
       "sos": 0.4867
-    },
-    {
-      "id": "6273",
-      "name": "Grêmio",
-      "abbreviation": "GRE",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6273.png",
-      "played": 33,
-      "points": 37,
-      "overall_rate": 0.3737,
-      "venue": {
-        "home": {
-          "played": 17,
-          "points": 29,
-          "rate": 0.5243
-        },
-        "away": {
-          "played": 16,
-          "points": 8,
-          "rate": 0.216
-        }
-      },
-      "remaining": 5,
-      "next_games": [
-        {
-          "id": "401841307",
-          "date": "2026-11-04T22:30:00Z",
-          "opponent_id": "819",
-          "opponent": "Flamengo",
-          "opponent_abbreviation": "FLA",
-          "location": "fora",
-          "difficulty": 0.7946
-        },
-        {
-          "id": "401841312",
-          "date": "2026-11-19T00:30:00Z",
-          "opponent_id": "9967",
-          "opponent": "Bahia",
-          "opponent_abbreviation": "BAH",
-          "location": "casa",
-          "difficulty": 0.4925
-        },
-        {
-          "id": "401841320",
-          "date": "2026-11-24T00:00:00Z",
-          "opponent_id": "2674",
-          "opponent": "Santos",
-          "opponent_abbreviation": "SAN",
-          "location": "fora",
-          "difficulty": 0.4867
-        },
-        {
-          "id": "401841334",
-          "date": "2026-11-28T20:00:00Z",
-          "opponent_id": "874",
-          "opponent": "Corinthians",
-          "opponent_abbreviation": "COR",
-          "location": "fora",
-          "difficulty": 0.3834
-        },
-        {
-          "id": "401841347",
-          "date": "2026-12-02T20:00:00Z",
-          "opponent_id": "9169",
-          "opponent": "Mirassol",
-          "opponent_abbreviation": "MIR",
-          "location": "casa",
-          "difficulty": 0.263
-        }
-      ],
-      "sos": 0.484
     },
     {
       "id": "9967",
@@ -437,19 +437,19 @@
       "name": "Mirassol",
       "abbreviation": "MIR",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9169.png",
-      "played": 32,
+      "played": 33,
       "points": 37,
-      "overall_rate": 0.3854,
+      "overall_rate": 0.3737,
       "venue": {
         "home": {
           "played": 17,
           "points": 27,
-          "rate": 0.4967
+          "rate": 0.494
         },
         "away": {
-          "played": 15,
+          "played": 16,
           "points": 10,
-          "rate": 0.263
+          "rate": 0.2477
         }
       },
       "remaining": 5,
@@ -717,19 +717,19 @@
       "name": "Corinthians",
       "abbreviation": "COR",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/874.png",
-      "played": 32,
-      "points": 33,
-      "overall_rate": 0.3438,
+      "played": 33,
+      "points": 36,
+      "overall_rate": 0.3636,
       "venue": {
         "home": {
-          "played": 16,
-          "points": 19,
-          "rate": 0.3834
+          "played": 17,
+          "points": 22,
+          "rate": 0.416
         },
         "away": {
           "played": 16,
           "points": 14,
-          "rate": 0.3041
+          "rate": 0.3088
         }
       },
       "remaining": 5,
@@ -820,7 +820,7 @@
           "opponent": "Mirassol",
           "opponent_abbreviation": "MIR",
           "location": "fora",
-          "difficulty": 0.4967
+          "difficulty": 0.494
         },
         {
           "id": "401841319",
@@ -829,7 +829,7 @@
           "opponent": "Corinthians",
           "opponent_abbreviation": "COR",
           "location": "casa",
-          "difficulty": 0.3041
+          "difficulty": 0.3088
         },
         {
           "id": "401841328",
@@ -850,7 +850,7 @@
           "difficulty": 0.5762
         }
       ],
-      "sos": 0.4268
+      "sos": 0.4272
     },
     {
       "id": "6079",
@@ -1118,7 +1118,7 @@
           "opponent": "Mirassol",
           "opponent_abbreviation": "MIR",
           "location": "fora",
-          "difficulty": 0.4967
+          "difficulty": 0.494
         },
         {
           "id": "401841338",
@@ -1130,7 +1130,7 @@
           "difficulty": 0.2502
         }
       ],
-      "sos": 0.4105
+      "sos": 0.4099
     },
     {
       "id": "819",
@@ -1231,7 +1231,7 @@
           "opponent": "Corinthians",
           "opponent_abbreviation": "COR",
           "location": "casa",
-          "difficulty": 0.3041
+          "difficulty": 0.3088
         },
         {
           "id": "401841309",
@@ -1270,7 +1270,7 @@
           "difficulty": 0.6378
         }
       ],
-      "sos": 0.4026
+      "sos": 0.4036
     },
     {
       "id": "3457",
@@ -1380,7 +1380,7 @@
           "opponent": "Corinthians",
           "opponent_abbreviation": "COR",
           "location": "fora",
-          "difficulty": 0.3834
+          "difficulty": 0.416
         },
         {
           "id": "401841326",
@@ -1410,7 +1410,7 @@
           "difficulty": 0.4867
         }
       ],
-      "sos": 0.3942
+      "sos": 0.4007
     }
   ]
 }
