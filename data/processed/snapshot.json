@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-11-07T23:08:03.565958Z",
+  "updated_at": "2026-11-08T14:35:41.035284Z",
   "sources": {
     "standings": "https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026",
     "schedule": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500"
@@ -54,7 +54,7 @@
         },
         {
           "id": "401841333",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-29T19:00:00Z",
           "opponent_id": "819",
           "opponent": "Flamengo",
           "opponent_abbreviation": "FLA",
@@ -63,7 +63,7 @@
         },
         {
           "id": "401841343",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "2029",
           "opponent": "Palmeiras",
           "opponent_abbreviation": "PAL",
@@ -124,7 +124,7 @@
         },
         {
           "id": "401841335",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-24T21:00:00Z",
           "opponent_id": "2029",
           "opponent": "Palmeiras",
           "opponent_abbreviation": "PAL",
@@ -133,7 +133,7 @@
         },
         {
           "id": "401841341",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "819",
           "opponent": "Flamengo",
           "opponent_abbreviation": "FLA",
@@ -185,7 +185,7 @@
         },
         {
           "id": "401841330",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-29T21:30:00Z",
           "opponent_id": "3458",
           "opponent": "Athletico Paranaense",
           "opponent_abbreviation": "CAP",
@@ -194,7 +194,7 @@
         },
         {
           "id": "401841347",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "6273",
           "opponent": "Grêmio",
           "opponent_abbreviation": "GRE",
@@ -246,7 +246,7 @@
         },
         {
           "id": "401841335",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-24T21:00:00Z",
           "opponent_id": "9318",
           "opponent": "Chapecoense",
           "opponent_abbreviation": "CHA",
@@ -255,7 +255,7 @@
         },
         {
           "id": "401841343",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "3456",
           "opponent": "Coritiba",
           "opponent_abbreviation": "CFC",
@@ -307,7 +307,7 @@
         },
         {
           "id": "401841337",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-27T23:00:00Z",
           "opponent_id": "2022",
           "opponent": "Cruzeiro",
           "opponent_abbreviation": "CRU",
@@ -316,7 +316,7 @@
         },
         {
           "id": "401841344",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "6079",
           "opponent": "Red Bull Bragantino",
           "opponent_abbreviation": "BRA",
@@ -368,7 +368,7 @@
         },
         {
           "id": "401841337",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-27T23:00:00Z",
           "opponent_id": "3445",
           "opponent": "Fluminense",
           "opponent_abbreviation": "FLU",
@@ -377,7 +377,7 @@
         },
         {
           "id": "401841340",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "1936",
           "opponent": "Internacional",
           "opponent_abbreviation": "INT",
@@ -429,7 +429,7 @@
         },
         {
           "id": "401841333",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-29T19:00:00Z",
           "opponent_id": "3456",
           "opponent": "Coritiba",
           "opponent_abbreviation": "CFC",
@@ -438,7 +438,7 @@
         },
         {
           "id": "401841341",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "9318",
           "opponent": "Chapecoense",
           "opponent_abbreviation": "CHA",
@@ -490,7 +490,7 @@
         },
         {
           "id": "401841330",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-29T21:30:00Z",
           "opponent_id": "9169",
           "opponent": "Mirassol",
           "opponent_abbreviation": "MIR",
@@ -499,7 +499,7 @@
         },
         {
           "id": "401841338",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "2026",
           "opponent": "São Paulo",
           "opponent_abbreviation": "SAO",
@@ -551,7 +551,7 @@
         },
         {
           "id": "401841336",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-29T00:00:00Z",
           "opponent_id": "6086",
           "opponent": "Botafogo",
           "opponent_abbreviation": "BOT",
@@ -560,7 +560,7 @@
         },
         {
           "id": "401841339",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "7632",
           "opponent": "Atlético-MG",
           "opponent_abbreviation": "CAM",
@@ -612,7 +612,7 @@
         },
         {
           "id": "401841332",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-29T19:00:00Z",
           "opponent_id": "2674",
           "opponent": "Santos",
           "opponent_abbreviation": "SAN",
@@ -621,7 +621,7 @@
         },
         {
           "id": "401841342",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "3454",
           "opponent": "Vasco da Gama",
           "opponent_abbreviation": "VAS",
@@ -673,7 +673,7 @@
         },
         {
           "id": "401841329",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-26T23:00:00Z",
           "opponent_id": "4936",
           "opponent": "Remo",
           "opponent_abbreviation": "REMO",
@@ -682,7 +682,7 @@
         },
         {
           "id": "401841338",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "3458",
           "opponent": "Athletico Paranaense",
           "opponent_abbreviation": "CAP",
@@ -734,7 +734,7 @@
         },
         {
           "id": "401841331",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-29T21:30:00Z",
           "opponent_id": "1936",
           "opponent": "Internacional",
           "opponent_abbreviation": "INT",
@@ -743,7 +743,7 @@
         },
         {
           "id": "401841344",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "3445",
           "opponent": "Fluminense",
           "opponent_abbreviation": "FLU",
@@ -795,7 +795,7 @@
         },
         {
           "id": "401841328",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-29T22:30:00Z",
           "opponent_id": "3454",
           "opponent": "Vasco da Gama",
           "opponent_abbreviation": "VAS",
@@ -804,7 +804,7 @@
         },
         {
           "id": "401841339",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "9967",
           "opponent": "Bahia",
           "opponent_abbreviation": "BAH",
@@ -856,7 +856,7 @@
         },
         {
           "id": "401841331",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-29T21:30:00Z",
           "opponent_id": "6079",
           "opponent": "Red Bull Bragantino",
           "opponent_abbreviation": "BRA",
@@ -865,7 +865,7 @@
         },
         {
           "id": "401841340",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "2022",
           "opponent": "Cruzeiro",
           "opponent_abbreviation": "CRU",
@@ -917,7 +917,7 @@
         },
         {
           "id": "401841329",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-26T23:00:00Z",
           "opponent_id": "2026",
           "opponent": "São Paulo",
           "opponent_abbreviation": "SAO",
@@ -926,7 +926,7 @@
         },
         {
           "id": "401841345",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "874",
           "opponent": "Corinthians",
           "opponent_abbreviation": "COR",
@@ -978,7 +978,7 @@
         },
         {
           "id": "401841334",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-29T21:30:00Z",
           "opponent_id": "874",
           "opponent": "Corinthians",
           "opponent_abbreviation": "COR",
@@ -987,7 +987,7 @@
         },
         {
           "id": "401841347",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "9169",
           "opponent": "Mirassol",
           "opponent_abbreviation": "MIR",
@@ -1039,7 +1039,7 @@
         },
         {
           "id": "401841336",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-29T00:00:00Z",
           "opponent_id": "9967",
           "opponent": "Bahia",
           "opponent_abbreviation": "BAH",
@@ -1048,7 +1048,7 @@
         },
         {
           "id": "401841346",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "2674",
           "opponent": "Santos",
           "opponent_abbreviation": "SAN",
@@ -1109,7 +1109,7 @@
         },
         {
           "id": "401841328",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-29T22:30:00Z",
           "opponent_id": "7632",
           "opponent": "Atlético-MG",
           "opponent_abbreviation": "CAM",
@@ -1118,7 +1118,7 @@
         },
         {
           "id": "401841342",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "3457",
           "opponent": "Vitória",
           "opponent_abbreviation": "VIT",
@@ -1170,7 +1170,7 @@
         },
         {
           "id": "401841332",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-29T19:00:00Z",
           "opponent_id": "3457",
           "opponent": "Vitória",
           "opponent_abbreviation": "VIT",
@@ -1179,7 +1179,7 @@
         },
         {
           "id": "401841346",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "6086",
           "opponent": "Botafogo",
           "opponent_abbreviation": "BOT",
@@ -1231,7 +1231,7 @@
         },
         {
           "id": "401841334",
-          "date": "2026-11-28T20:00:00Z",
+          "date": "2026-11-29T21:30:00Z",
           "opponent_id": "6273",
           "opponent": "Grêmio",
           "opponent_abbreviation": "GRE",
@@ -1240,7 +1240,7 @@
         },
         {
           "id": "401841345",
-          "date": "2026-12-02T20:00:00Z",
+          "date": "2026-12-03T00:30:00Z",
           "opponent_id": "4936",
           "opponent": "Remo",
           "opponent_abbreviation": "REMO",
