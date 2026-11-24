@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-11-24T04:27:45.043155Z",
+  "updated_at": "2026-11-24T19:07:52.225232Z",
   "sources": {
     "standings": "https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026",
     "schedule": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500"
@@ -9,7 +9,7 @@
     "next_games": 5,
     "prior_games": 5
   },
-  "completed_games": 358,
+  "completed_games": 359,
   "scheduled_games": 21,
   "teams": [
     {
@@ -351,10 +351,10 @@
           "opponent": "Santos",
           "opponent_abbreviation": "SAN",
           "location": "fora",
-          "difficulty": 0.484
+          "difficulty": 0.463
         }
       ],
-      "sos": 0.4703
+      "sos": 0.4597
     },
     {
       "id": "2674",
@@ -366,9 +366,9 @@
       "overall_rate": 0.463,
       "venue": {
         "home": {
-          "played": 17,
+          "played": 18,
           "points": 25,
-          "rate": 0.484
+          "rate": 0.463
         },
         "away": {
           "played": 18,
@@ -484,6 +484,58 @@
         }
       ],
       "sos": 0.4299
+    },
+    {
+      "id": "874",
+      "name": "Corinthians",
+      "abbreviation": "COR",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/874.png",
+      "played": 35,
+      "points": 40,
+      "overall_rate": 0.381,
+      "venue": {
+        "home": {
+          "played": 18,
+          "points": 25,
+          "rate": 0.4451
+        },
+        "away": {
+          "played": 17,
+          "points": 15,
+          "rate": 0.3139
+        }
+      },
+      "remaining": 3,
+      "next_games": [
+        {
+          "id": "401841319",
+          "date": "2026-11-25T23:00:00Z",
+          "opponent_id": "7632",
+          "opponent": "Atlético-MG",
+          "opponent_abbreviation": "CAM",
+          "location": "fora",
+          "difficulty": 0.6407
+        },
+        {
+          "id": "401841334",
+          "date": "2026-11-29T21:30:00Z",
+          "opponent_id": "6273",
+          "opponent": "Grêmio",
+          "opponent_abbreviation": "GRE",
+          "location": "casa",
+          "difficulty": 0.2419
+        },
+        {
+          "id": "401841345",
+          "date": "2026-12-03T00:30:00Z",
+          "opponent_id": "4936",
+          "opponent": "Remo",
+          "opponent_abbreviation": "REMO",
+          "location": "fora",
+          "difficulty": 0.3833
+        }
+      ],
+      "sos": 0.422
     },
     {
       "id": "6079",
@@ -615,58 +667,6 @@
       "sos": 0.415
     },
     {
-      "id": "874",
-      "name": "Corinthians",
-      "abbreviation": "COR",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/874.png",
-      "played": 35,
-      "points": 40,
-      "overall_rate": 0.381,
-      "venue": {
-        "home": {
-          "played": 18,
-          "points": 25,
-          "rate": 0.4451
-        },
-        "away": {
-          "played": 17,
-          "points": 15,
-          "rate": 0.3139
-        }
-      },
-      "remaining": 3,
-      "next_games": [
-        {
-          "id": "401841319",
-          "date": "2026-11-25T23:00:00Z",
-          "opponent_id": "7632",
-          "opponent": "Atlético-MG",
-          "opponent_abbreviation": "CAM",
-          "location": "fora",
-          "difficulty": 0.6407
-        },
-        {
-          "id": "401841334",
-          "date": "2026-11-29T21:30:00Z",
-          "opponent_id": "6273",
-          "opponent": "Grêmio",
-          "opponent_abbreviation": "GRE",
-          "location": "casa",
-          "difficulty": 0.2075
-        },
-        {
-          "id": "401841345",
-          "date": "2026-12-03T00:30:00Z",
-          "opponent_id": "4936",
-          "opponent": "Remo",
-          "opponent_abbreviation": "REMO",
-          "location": "fora",
-          "difficulty": 0.3833
-        }
-      ],
-      "sos": 0.4105
-    },
-    {
       "id": "7632",
       "name": "Atlético-MG",
       "abbreviation": "CAM",
@@ -776,9 +776,9 @@
           "rate": 0.5173
         },
         "away": {
-          "played": 17,
-          "points": 8,
-          "rate": 0.2075
+          "played": 18,
+          "points": 11,
+          "rate": 0.2419
         }
       },
       "remaining": 2,
