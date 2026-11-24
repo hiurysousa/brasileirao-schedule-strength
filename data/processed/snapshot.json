@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-11-23T19:32:00.702894Z",
+  "updated_at": "2026-11-24T04:27:45.043155Z",
   "sources": {
     "standings": "https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026",
     "schedule": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500"
@@ -9,8 +9,8 @@
     "next_games": 5,
     "prior_games": 5
   },
-  "completed_games": 356,
-  "scheduled_games": 24,
+  "completed_games": 358,
+  "scheduled_games": 21,
   "teams": [
     {
       "id": "3456",
@@ -179,42 +179,76 @@
           "opponent": "Internacional",
           "opponent_abbreviation": "INT",
           "location": "casa",
-          "difficulty": 0.2961
+          "difficulty": 0.2939
         }
       ],
-      "sos": 0.5158
+      "sos": 0.5147
+    },
+    {
+      "id": "1936",
+      "name": "Internacional",
+      "abbreviation": "INT",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1936.png",
+      "played": 36,
+      "points": 38,
+      "overall_rate": 0.3519,
+      "venue": {
+        "home": {
+          "played": 18,
+          "points": 23,
+          "rate": 0.4098
+        },
+        "away": {
+          "played": 18,
+          "points": 15,
+          "rate": 0.2939
+        }
+      },
+      "remaining": 2,
+      "next_games": [
+        {
+          "id": "401841331",
+          "date": "2026-11-29T21:30:00Z",
+          "opponent_id": "6079",
+          "opponent": "Red Bull Bragantino",
+          "opponent_abbreviation": "BRA",
+          "location": "casa",
+          "difficulty": 0.347
+        },
+        {
+          "id": "401841340",
+          "date": "2026-12-03T00:30:00Z",
+          "opponent_id": "2022",
+          "opponent": "Cruzeiro",
+          "opponent_abbreviation": "CRU",
+          "location": "fora",
+          "difficulty": 0.6691
+        }
+      ],
+      "sos": 0.5081
     },
     {
       "id": "3457",
       "name": "Vitória",
       "abbreviation": "VIT",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3457.png",
-      "played": 35,
-      "points": 41,
-      "overall_rate": 0.3905,
+      "played": 36,
+      "points": 44,
+      "overall_rate": 0.4074,
       "venue": {
         "home": {
           "played": 18,
           "points": 35,
-          "rate": 0.5921
+          "rate": 0.5958
         },
         "away": {
-          "played": 17,
-          "points": 6,
-          "rate": 0.1797
+          "played": 18,
+          "points": 9,
+          "rate": 0.219
         }
       },
-      "remaining": 3,
+      "remaining": 2,
       "next_games": [
-        {
-          "id": "401841323",
-          "date": "2026-11-23T22:30:00Z",
-          "opponent_id": "1936",
-          "opponent": "Internacional",
-          "opponent_abbreviation": "INT",
-          "location": "fora",
-          "difficulty": 0.4307
-        },
         {
           "id": "401841332",
           "date": "2026-11-29T19:00:00Z",
@@ -222,7 +256,7 @@
           "opponent": "Santos",
           "opponent_abbreviation": "SAN",
           "location": "casa",
-          "difficulty": 0.4658
+          "difficulty": 0.463
         },
         {
           "id": "401841342",
@@ -234,7 +268,7 @@
           "difficulty": 0.5294
         }
       ],
-      "sos": 0.4753
+      "sos": 0.4962
     },
     {
       "id": "9169",
@@ -274,10 +308,96 @@
           "opponent": "Grêmio",
           "opponent_abbreviation": "GRE",
           "location": "fora",
-          "difficulty": 0.5135
+          "difficulty": 0.5173
         }
       ],
-      "sos": 0.4735
+      "sos": 0.4754
+    },
+    {
+      "id": "6086",
+      "name": "Botafogo",
+      "abbreviation": "BOT",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6086.png",
+      "played": 36,
+      "points": 43,
+      "overall_rate": 0.3981,
+      "venue": {
+        "home": {
+          "played": 18,
+          "points": 28,
+          "rate": 0.4924
+        },
+        "away": {
+          "played": 18,
+          "points": 15,
+          "rate": 0.3039
+        }
+      },
+      "remaining": 2,
+      "next_games": [
+        {
+          "id": "401841336",
+          "date": "2026-11-29T00:00:00Z",
+          "opponent_id": "9967",
+          "opponent": "Bahia",
+          "opponent_abbreviation": "BAH",
+          "location": "casa",
+          "difficulty": 0.4565
+        },
+        {
+          "id": "401841346",
+          "date": "2026-12-03T00:30:00Z",
+          "opponent_id": "2674",
+          "opponent": "Santos",
+          "opponent_abbreviation": "SAN",
+          "location": "fora",
+          "difficulty": 0.484
+        }
+      ],
+      "sos": 0.4703
+    },
+    {
+      "id": "2674",
+      "name": "Santos",
+      "abbreviation": "SAN",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2674.png",
+      "played": 36,
+      "points": 50,
+      "overall_rate": 0.463,
+      "venue": {
+        "home": {
+          "played": 17,
+          "points": 25,
+          "rate": 0.484
+        },
+        "away": {
+          "played": 18,
+          "points": 25,
+          "rate": 0.463
+        }
+      },
+      "remaining": 2,
+      "next_games": [
+        {
+          "id": "401841332",
+          "date": "2026-11-29T19:00:00Z",
+          "opponent_id": "3457",
+          "opponent": "Vitória",
+          "opponent_abbreviation": "VIT",
+          "location": "fora",
+          "difficulty": 0.5958
+        },
+        {
+          "id": "401841346",
+          "date": "2026-12-03T00:30:00Z",
+          "opponent_id": "6086",
+          "opponent": "Botafogo",
+          "opponent_abbreviation": "BOT",
+          "location": "casa",
+          "difficulty": 0.3039
+        }
+      ],
+      "sos": 0.4498
     },
     {
       "id": "4936",
@@ -308,7 +428,7 @@
           "opponent": "São Paulo",
           "opponent_abbreviation": "SAO",
           "location": "fora",
-          "difficulty": 0.5839
+          "difficulty": 0.5833
         },
         {
           "id": "401841345",
@@ -320,145 +440,7 @@
           "difficulty": 0.3139
         }
       ],
-      "sos": 0.4489
-    },
-    {
-      "id": "2026",
-      "name": "São Paulo",
-      "abbreviation": "SAO",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2026.png",
-      "played": 35,
-      "points": 44,
-      "overall_rate": 0.419,
-      "venue": {
-        "home": {
-          "played": 18,
-          "points": 34,
-          "rate": 0.5839
-        },
-        "away": {
-          "played": 17,
-          "points": 10,
-          "rate": 0.2468
-        }
-      },
-      "remaining": 3,
-      "next_games": [
-        {
-          "id": "401841326",
-          "date": "2026-11-23T23:00:00Z",
-          "opponent_id": "6086",
-          "opponent": "Botafogo",
-          "opponent_abbreviation": "BOT",
-          "location": "fora",
-          "difficulty": 0.5
-        },
-        {
-          "id": "401841329",
-          "date": "2026-11-26T23:00:00Z",
-          "opponent_id": "4936",
-          "opponent": "Remo",
-          "opponent_abbreviation": "REMO",
-          "location": "casa",
-          "difficulty": 0.2093
-        },
-        {
-          "id": "401841338",
-          "date": "2026-12-03T00:30:00Z",
-          "opponent_id": "3458",
-          "opponent": "Athletico Paranaense",
-          "opponent_abbreviation": "CAP",
-          "location": "fora",
-          "difficulty": 0.622
-        }
-      ],
-      "sos": 0.4438
-    },
-    {
-      "id": "6079",
-      "name": "Red Bull Bragantino",
-      "abbreviation": "BRA",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6079.png",
-      "played": 36,
-      "points": 50,
-      "overall_rate": 0.463,
-      "venue": {
-        "home": {
-          "played": 18,
-          "points": 33,
-          "rate": 0.5789
-        },
-        "away": {
-          "played": 18,
-          "points": 17,
-          "rate": 0.347
-        }
-      },
-      "remaining": 2,
-      "next_games": [
-        {
-          "id": "401841331",
-          "date": "2026-11-29T21:30:00Z",
-          "opponent_id": "1936",
-          "opponent": "Internacional",
-          "opponent_abbreviation": "INT",
-          "location": "fora",
-          "difficulty": 0.4307
-        },
-        {
-          "id": "401841344",
-          "date": "2026-12-03T00:30:00Z",
-          "opponent_id": "3445",
-          "opponent": "Fluminense",
-          "opponent_abbreviation": "FLU",
-          "location": "casa",
-          "difficulty": 0.4312
-        }
-      ],
-      "sos": 0.431
-    },
-    {
-      "id": "9967",
-      "name": "Bahia",
-      "abbreviation": "BAH",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9967.png",
-      "played": 36,
-      "points": 54,
-      "overall_rate": 0.5,
-      "venue": {
-        "home": {
-          "played": 18,
-          "points": 30,
-          "rate": 0.5435
-        },
-        "away": {
-          "played": 18,
-          "points": 24,
-          "rate": 0.4565
-        }
-      },
-      "remaining": 2,
-      "next_games": [
-        {
-          "id": "401841336",
-          "date": "2026-11-29T00:00:00Z",
-          "opponent_id": "6086",
-          "opponent": "Botafogo",
-          "opponent_abbreviation": "BOT",
-          "location": "fora",
-          "difficulty": 0.5
-        },
-        {
-          "id": "401841339",
-          "date": "2026-12-03T00:30:00Z",
-          "opponent_id": "7632",
-          "opponent": "Atlético-MG",
-          "opponent_abbreviation": "CAM",
-          "location": "casa",
-          "difficulty": 0.3375
-        }
-      ],
-      "sos": 0.4188
+      "sos": 0.4486
     },
     {
       "id": "3454",
@@ -498,10 +480,139 @@
           "opponent": "Vitória",
           "opponent_abbreviation": "VIT",
           "location": "casa",
-          "difficulty": 0.1797
+          "difficulty": 0.219
         }
       ],
-      "sos": 0.4102
+      "sos": 0.4299
+    },
+    {
+      "id": "6079",
+      "name": "Red Bull Bragantino",
+      "abbreviation": "BRA",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6079.png",
+      "played": 36,
+      "points": 50,
+      "overall_rate": 0.463,
+      "venue": {
+        "home": {
+          "played": 18,
+          "points": 33,
+          "rate": 0.5789
+        },
+        "away": {
+          "played": 18,
+          "points": 17,
+          "rate": 0.347
+        }
+      },
+      "remaining": 2,
+      "next_games": [
+        {
+          "id": "401841331",
+          "date": "2026-11-29T21:30:00Z",
+          "opponent_id": "1936",
+          "opponent": "Internacional",
+          "opponent_abbreviation": "INT",
+          "location": "fora",
+          "difficulty": 0.4098
+        },
+        {
+          "id": "401841344",
+          "date": "2026-12-03T00:30:00Z",
+          "opponent_id": "3445",
+          "opponent": "Fluminense",
+          "opponent_abbreviation": "FLU",
+          "location": "casa",
+          "difficulty": 0.4312
+        }
+      ],
+      "sos": 0.4205
+    },
+    {
+      "id": "2026",
+      "name": "São Paulo",
+      "abbreviation": "SAO",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2026.png",
+      "played": 36,
+      "points": 45,
+      "overall_rate": 0.4167,
+      "venue": {
+        "home": {
+          "played": 18,
+          "points": 34,
+          "rate": 0.5833
+        },
+        "away": {
+          "played": 18,
+          "points": 11,
+          "rate": 0.25
+        }
+      },
+      "remaining": 2,
+      "next_games": [
+        {
+          "id": "401841329",
+          "date": "2026-11-26T23:00:00Z",
+          "opponent_id": "4936",
+          "opponent": "Remo",
+          "opponent_abbreviation": "REMO",
+          "location": "casa",
+          "difficulty": 0.2093
+        },
+        {
+          "id": "401841338",
+          "date": "2026-12-03T00:30:00Z",
+          "opponent_id": "3458",
+          "opponent": "Athletico Paranaense",
+          "opponent_abbreviation": "CAP",
+          "location": "fora",
+          "difficulty": 0.622
+        }
+      ],
+      "sos": 0.4157
+    },
+    {
+      "id": "9967",
+      "name": "Bahia",
+      "abbreviation": "BAH",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9967.png",
+      "played": 36,
+      "points": 54,
+      "overall_rate": 0.5,
+      "venue": {
+        "home": {
+          "played": 18,
+          "points": 30,
+          "rate": 0.5435
+        },
+        "away": {
+          "played": 18,
+          "points": 24,
+          "rate": 0.4565
+        }
+      },
+      "remaining": 2,
+      "next_games": [
+        {
+          "id": "401841336",
+          "date": "2026-11-29T00:00:00Z",
+          "opponent_id": "6086",
+          "opponent": "Botafogo",
+          "opponent_abbreviation": "BOT",
+          "location": "fora",
+          "difficulty": 0.4924
+        },
+        {
+          "id": "401841339",
+          "date": "2026-12-03T00:30:00Z",
+          "opponent_id": "7632",
+          "opponent": "Atlético-MG",
+          "opponent_abbreviation": "CAM",
+          "location": "casa",
+          "difficulty": 0.3375
+        }
+      ],
+      "sos": 0.415
     },
     {
       "id": "874",
@@ -541,7 +652,7 @@
           "opponent": "Grêmio",
           "opponent_abbreviation": "GRE",
           "location": "casa",
-          "difficulty": 0.2035
+          "difficulty": 0.2075
         },
         {
           "id": "401841345",
@@ -553,59 +664,7 @@
           "difficulty": 0.3833
         }
       ],
-      "sos": 0.4092
-    },
-    {
-      "id": "6273",
-      "name": "Grêmio",
-      "abbreviation": "GRE",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6273.png",
-      "played": 35,
-      "points": 38,
-      "overall_rate": 0.3619,
-      "venue": {
-        "home": {
-          "played": 18,
-          "points": 30,
-          "rate": 0.5135
-        },
-        "away": {
-          "played": 17,
-          "points": 8,
-          "rate": 0.2035
-        }
-      },
-      "remaining": 3,
-      "next_games": [
-        {
-          "id": "401841320",
-          "date": "2026-11-24T00:00:00Z",
-          "opponent_id": "2674",
-          "opponent": "Santos",
-          "opponent_abbreviation": "SAN",
-          "location": "fora",
-          "difficulty": 0.487
-        },
-        {
-          "id": "401841334",
-          "date": "2026-11-29T21:30:00Z",
-          "opponent_id": "874",
-          "opponent": "Corinthians",
-          "opponent_abbreviation": "COR",
-          "location": "fora",
-          "difficulty": 0.4451
-        },
-        {
-          "id": "401841347",
-          "date": "2026-12-03T00:30:00Z",
-          "opponent_id": "9169",
-          "opponent": "Mirassol",
-          "opponent_abbreviation": "MIR",
-          "location": "casa",
-          "difficulty": 0.2709
-        }
-      ],
-      "sos": 0.401
+      "sos": 0.4105
     },
     {
       "id": "7632",
@@ -660,110 +719,6 @@
       "sos": 0.3995
     },
     {
-      "id": "1936",
-      "name": "Internacional",
-      "abbreviation": "INT",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1936.png",
-      "played": 35,
-      "points": 38,
-      "overall_rate": 0.3619,
-      "venue": {
-        "home": {
-          "played": 17,
-          "points": 23,
-          "rate": 0.4307
-        },
-        "away": {
-          "played": 18,
-          "points": 15,
-          "rate": 0.2961
-        }
-      },
-      "remaining": 3,
-      "next_games": [
-        {
-          "id": "401841323",
-          "date": "2026-11-23T22:30:00Z",
-          "opponent_id": "3457",
-          "opponent": "Vitória",
-          "opponent_abbreviation": "VIT",
-          "location": "casa",
-          "difficulty": 0.1797
-        },
-        {
-          "id": "401841331",
-          "date": "2026-11-29T21:30:00Z",
-          "opponent_id": "6079",
-          "opponent": "Red Bull Bragantino",
-          "opponent_abbreviation": "BRA",
-          "location": "casa",
-          "difficulty": 0.347
-        },
-        {
-          "id": "401841340",
-          "date": "2026-12-03T00:30:00Z",
-          "opponent_id": "2022",
-          "opponent": "Cruzeiro",
-          "opponent_abbreviation": "CRU",
-          "location": "fora",
-          "difficulty": 0.6691
-        }
-      ],
-      "sos": 0.3986
-    },
-    {
-      "id": "6086",
-      "name": "Botafogo",
-      "abbreviation": "BOT",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6086.png",
-      "played": 35,
-      "points": 42,
-      "overall_rate": 0.4,
-      "venue": {
-        "home": {
-          "played": 17,
-          "points": 27,
-          "rate": 0.5
-        },
-        "away": {
-          "played": 18,
-          "points": 15,
-          "rate": 0.3043
-        }
-      },
-      "remaining": 3,
-      "next_games": [
-        {
-          "id": "401841326",
-          "date": "2026-11-23T23:00:00Z",
-          "opponent_id": "2026",
-          "opponent": "São Paulo",
-          "opponent_abbreviation": "SAO",
-          "location": "casa",
-          "difficulty": 0.2468
-        },
-        {
-          "id": "401841336",
-          "date": "2026-11-29T00:00:00Z",
-          "opponent_id": "9967",
-          "opponent": "Bahia",
-          "opponent_abbreviation": "BAH",
-          "location": "casa",
-          "difficulty": 0.4565
-        },
-        {
-          "id": "401841346",
-          "date": "2026-12-03T00:30:00Z",
-          "opponent_id": "2674",
-          "opponent": "Santos",
-          "opponent_abbreviation": "SAN",
-          "location": "fora",
-          "difficulty": 0.487
-        }
-      ],
-      "sos": 0.3968
-    },
-    {
       "id": "3458",
       "name": "Athletico Paranaense",
       "abbreviation": "CAP",
@@ -801,62 +756,53 @@
           "opponent": "São Paulo",
           "opponent_abbreviation": "SAO",
           "location": "casa",
-          "difficulty": 0.2468
+          "difficulty": 0.25
         }
       ],
-      "sos": 0.3675
+      "sos": 0.3691
     },
     {
-      "id": "2674",
-      "name": "Santos",
-      "abbreviation": "SAN",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2674.png",
-      "played": 35,
-      "points": 50,
-      "overall_rate": 0.4762,
+      "id": "6273",
+      "name": "Grêmio",
+      "abbreviation": "GRE",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6273.png",
+      "played": 36,
+      "points": 41,
+      "overall_rate": 0.3796,
       "venue": {
         "home": {
-          "played": 17,
-          "points": 25,
-          "rate": 0.487
+          "played": 18,
+          "points": 30,
+          "rate": 0.5173
         },
         "away": {
-          "played": 18,
-          "points": 25,
-          "rate": 0.4658
+          "played": 17,
+          "points": 8,
+          "rate": 0.2075
         }
       },
-      "remaining": 3,
+      "remaining": 2,
       "next_games": [
         {
-          "id": "401841320",
-          "date": "2026-11-24T00:00:00Z",
-          "opponent_id": "6273",
-          "opponent": "Grêmio",
-          "opponent_abbreviation": "GRE",
-          "location": "casa",
-          "difficulty": 0.2035
-        },
-        {
-          "id": "401841332",
-          "date": "2026-11-29T19:00:00Z",
-          "opponent_id": "3457",
-          "opponent": "Vitória",
-          "opponent_abbreviation": "VIT",
+          "id": "401841334",
+          "date": "2026-11-29T21:30:00Z",
+          "opponent_id": "874",
+          "opponent": "Corinthians",
+          "opponent_abbreviation": "COR",
           "location": "fora",
-          "difficulty": 0.5921
+          "difficulty": 0.4451
         },
         {
-          "id": "401841346",
+          "id": "401841347",
           "date": "2026-12-03T00:30:00Z",
-          "opponent_id": "6086",
-          "opponent": "Botafogo",
-          "opponent_abbreviation": "BOT",
+          "opponent_id": "9169",
+          "opponent": "Mirassol",
+          "opponent_abbreviation": "MIR",
           "location": "casa",
-          "difficulty": 0.3043
+          "difficulty": 0.2709
         }
       ],
-      "sos": 0.3666
+      "sos": 0.358
     },
     {
       "id": "2029",
