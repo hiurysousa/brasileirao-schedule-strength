@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-11-26T02:29:49.731389Z",
+  "updated_at": "2026-11-26T17:55:05.887200Z",
   "sources": {
     "standings": "https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026",
     "schedule": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500"
