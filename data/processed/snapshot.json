@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated_at": "2026-11-27T17:40:37.091537Z",
+  "updated_at": "2026-11-28T02:16:01.799962Z",
   "sources": {
     "standings": "https://site.api.espn.com/apis/v2/sports/soccer/bra.1/standings?season=2026",
     "schedule": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=2026&limit=500"
@@ -9,8 +9,8 @@
     "next_games": 5,
     "prior_games": 5
   },
-  "completed_games": 362,
-  "scheduled_games": 18,
+  "completed_games": 363,
+  "scheduled_games": 17,
   "teams": [
     {
       "id": "9318",
@@ -128,32 +128,23 @@
       "name": "Fluminense",
       "abbreviation": "FLU",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3445.png",
-      "played": 36,
+      "played": 37,
       "points": 63,
-      "overall_rate": 0.5833,
+      "overall_rate": 0.5676,
       "venue": {
         "home": {
-          "played": 18,
+          "played": 19,
           "points": 42,
-          "rate": 0.7355
+          "rate": 0.7016
         },
         "away": {
           "played": 18,
           "points": 21,
-          "rate": 0.4312
+          "rate": 0.4277
         }
       },
-      "remaining": 2,
+      "remaining": 1,
       "next_games": [
-        {
-          "id": "401841337",
-          "date": "2026-11-27T23:00:00Z",
-          "opponent_id": "2022",
-          "opponent": "Cruzeiro",
-          "opponent_abbreviation": "CRU",
-          "location": "casa",
-          "difficulty": 0.5531
-        },
         {
           "id": "401841344",
           "date": "2026-12-03T00:30:00Z",
@@ -164,50 +155,7 @@
           "difficulty": 0.5789
         }
       ],
-      "sos": 0.566
-    },
-    {
-      "id": "2022",
-      "name": "Cruzeiro",
-      "abbreviation": "CRU",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2022.png",
-      "played": 36,
-      "points": 66,
-      "overall_rate": 0.6111,
-      "venue": {
-        "home": {
-          "played": 18,
-          "points": 37,
-          "rate": 0.6691
-        },
-        "away": {
-          "played": 18,
-          "points": 29,
-          "rate": 0.5531
-        }
-      },
-      "remaining": 2,
-      "next_games": [
-        {
-          "id": "401841337",
-          "date": "2026-11-27T23:00:00Z",
-          "opponent_id": "3445",
-          "opponent": "Fluminense",
-          "opponent_abbreviation": "FLU",
-          "location": "fora",
-          "difficulty": 0.7355
-        },
-        {
-          "id": "401841340",
-          "date": "2026-12-03T00:30:00Z",
-          "opponent_id": "1936",
-          "opponent": "Internacional",
-          "opponent_abbreviation": "INT",
-          "location": "casa",
-          "difficulty": 0.2939
-        }
-      ],
-      "sos": 0.5147
+      "sos": 0.5789
     },
     {
       "id": "1936",
@@ -247,10 +195,10 @@
           "opponent": "Cruzeiro",
           "opponent_abbreviation": "CRU",
           "location": "fora",
-          "difficulty": 0.6691
+          "difficulty": 0.6714
         }
       ],
-      "sos": 0.5081
+      "sos": 0.5092
     },
     {
       "id": "3457",
@@ -548,10 +496,10 @@
           "opponent": "Fluminense",
           "opponent_abbreviation": "FLU",
           "location": "casa",
-          "difficulty": 0.4312
+          "difficulty": 0.4277
         }
       ],
-      "sos": 0.4205
+      "sos": 0.4188
     },
     {
       "id": "9967",
@@ -792,6 +740,40 @@
         }
       ],
       "sos": 0.3117
+    },
+    {
+      "id": "2022",
+      "name": "Cruzeiro",
+      "abbreviation": "CRU",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2022.png",
+      "played": 37,
+      "points": 69,
+      "overall_rate": 0.6216,
+      "venue": {
+        "home": {
+          "played": 18,
+          "points": 37,
+          "rate": 0.6714
+        },
+        "away": {
+          "played": 19,
+          "points": 32,
+          "rate": 0.5739
+        }
+      },
+      "remaining": 1,
+      "next_games": [
+        {
+          "id": "401841340",
+          "date": "2026-12-03T00:30:00Z",
+          "opponent_id": "1936",
+          "opponent": "Internacional",
+          "opponent_abbreviation": "INT",
+          "location": "casa",
+          "difficulty": 0.2939
+        }
+      ],
+      "sos": 0.2939
     },
     {
       "id": "819",
